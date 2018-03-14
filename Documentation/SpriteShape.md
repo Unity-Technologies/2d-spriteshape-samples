@@ -153,12 +153,9 @@ The asset is where you will set the parameters for the Sprite Shape. Angle Range
 |                      |                                          |
 
 
-
 ## **Sprite Shape Controller**
 
 The Sprite Shape Controller is used on the actual Sprite in the Scene. It has overrides for some the settings from the asset. It also provides finer manipulation for Control Points.
-
-[Image of Sprite Shape Controller]
 
 | Edit Spline       | Enables editing the Control Points of the Spline |
 | ----------------- | ---------------------------------------- |
@@ -173,8 +170,6 @@ The Sprite Shape Controller is used on the actual Sprite in the Scene. It has ov
 | Fillet Length     | **Controls the length of the fillet**    |
 | Sprite Index      | **Changes the sprite to used at the selected Control Point |
 | Corner Override   | Disables the Corner Setting for the selected Control Point** |
-| Sorting Layer     |                                          |
-| Order in Layer    |                                          |
 |                   |                                          |
 |                   |                                          |
 

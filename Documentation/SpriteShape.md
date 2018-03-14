@@ -150,7 +150,6 @@ The asset is where you will set the parameters for the Sprite Shape. Angle Range
 | **Corner Sprites**   |                                          |
 | Corner Type          | “Activates” a Corner Type                |
 | Sprites              | Sprite to be assigned to the particular corner type. |
-|                      |                                          |
 
 
 ## **Sprite Shape Controller**
@@ -170,6 +169,4 @@ The Sprite Shape Controller is used on the actual Sprite in the Scene. It has ov
 | Fillet Length     | **Controls the length of the fillet**    |
 | Sprite Index      | **Changes the sprite to used at the selected Control Point |
 | Corner Override   | Disables the Corner Setting for the selected Control Point** |
-|                   |                                          |
-|                   |                                          |
 

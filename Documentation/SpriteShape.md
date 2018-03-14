@@ -1,8 +1,8 @@
 ## **Overview**
 
-The Sprite Shape is a sprite layout or world building tool that provides the ability to tile sprites along the path of a shape based on given angle ranges. Additionally the shape can be filled with a tiling texture.
+The SpriteShape is a sprite layout or world building tool that provides the ability to tile sprites along the path of a shape based on given angle ranges. Additionally the shape can be filled with a tiling texture.
 
-Sample game levels created entirely with Sprite Shape
+Sample game levels created entirely with SpriteShape
 
 ![Image of game screen](images/image22.png)
 
@@ -14,7 +14,7 @@ Sample game levels created entirely with Sprite Shape
 
 
 
-The main feature of the Sprite Shape is the powerful combination of a bezier spline path with the ability to tile Sprites adaptively or continuously while automatically switching  Sprites assigned to given angles.
+The main feature of the SpriteShape is the powerful combination of a bezier spline path with the ability to tile Sprites adaptively or continuously while automatically switching  Sprites assigned to given angles.
 
 ![Image of game screen](images/image2.png)
 
@@ -32,31 +32,31 @@ Instead of having to figure out the appropriate angle, vector, direction or Norm
 
 
 
-Input Sprites are always extracted horizontally and mapped accordingly, counter-clockwise along the path of the Sprite Shape.
+Input Sprites are always extracted horizontally and mapped accordingly, counter-clockwise along the path of the SpriteShape.
 
 ![Image of game screen](images/image6.png)
 
 
 
-The Sprite Shape GameObject requires a Sprite Shape Profile asset. The asset holds the “Settings” applied to or reused on multiple Sprite Shapes. 
+The SpriteShape GameObject requires a SpriteShape Profile asset. The asset holds the “Settings” applied to or reused on multiple SpriteShapes. 
 
 ![Image of game screen](images/image9.png)
 
-*Example02. Sprite Shape Profile. This is where the different settings are setup, such as Angle Ranges and the Sprites to be used or a Fill Texture. The profile is then used by the Sprite Shape GameObject.*
+*Example02. SpriteShape Profile. This is where the different settings are setup, such as Angle Ranges and the Sprites to be used or a Fill Texture. The profile is then used by the SpriteShape GameObject.*
 
 
 
-### Creating a Sprite Shape Profile
+### Creating a SpriteShape Profile
 
-The Sprite Shape is a type of Asset in Unity projects. To create a Sprite Shape select **Asset -> Create -> Sprite Shape Profile -> ...** from the main menu.
+The SpriteShape is a type of Asset in Unity projects. To create a SpriteShape select **Asset -> Create -> SpriteShape Profile -> ...** from the main menu.
 
 ![Image of game screen](images/image17.png)
 
-There are 3 options available. Empty which is the default Sprite Shape Profile, Strip and Shape, which have preset angle ranges. This example will be using the Empty Profile.Select the newly created asset to view its inspector. This is where we will setup the Fill texture, the Angle Ranges and assign Sprites to the Angle Ranges.
+There are 3 options available. Empty which is the default SpriteShape Profile, Strip and Shape, which have preset angle ranges. This example will be using the Empty Profile.Select the newly created asset to view its inspector. This is where we will setup the Fill texture, the Angle Ranges and assign Sprites to the Angle Ranges.
 
 ![Image of game screen](images/image19.png)
 
-*Sprite Shape Profile Asset*
+*SpriteShape Profile Asset*
 
 
 
@@ -105,9 +105,9 @@ There are 3 options available. Empty which is the default Sprite Shape Profile, 
 
 
 
-### Creating and Editing the Sprite Shape
+### Creating and Editing the SpriteShape
 
-1. Dragging the Sprite Shape Profile asset into the Scene View will create a Sprite Shape GameObject using the Profile.
+1. Dragging the SpriteShape Profile asset into the Scene View will create a SpriteShape GameObject using the Profile.
 
 ![Image of game screen](images/image16.png)
 
@@ -117,7 +117,7 @@ There are 3 options available. Empty which is the default Sprite Shape Profile, 
 
 ![Image of game screen](images/image20.png)
 
-When a Control Point is selected, additional parameters are available for the selected Control Point. Refer to the Sprite Shape Controller section below for more information. Commonly used options are 
+When a Control Point is selected, additional parameters are available for the selected Control Point. Refer to the SpriteShape Controller section below for more information. Commonly used options are 
 
 - Point Mode, which changes the Control Point bezier control between Linear, MIrrored or Not Mirrored (commonly referred to as “Broken”).
 - Height vertically scales the sprite at the selected Control Point
@@ -127,13 +127,13 @@ When a Control Point is selected, additional parameters are available for the se
 
 
 
-## Sprite Shape Profile Asset
+## SpriteShape Profile Asset
 
-The asset is where you will set the parameters for the Sprite Shape. Angle Ranges, Sprites, Fill Texture etc.
+The asset is where you will set the parameters for the SpriteShape. Angle Ranges, Sprites, Fill Texture etc.
 
 ![Image of game screen](images/image11.png)
 
-### **Sprite Shape Profile Parameters**
+### **SpriteShape Profile Parameters**
 
 | **Control Points**   |                                          |
 | :------------------- | :--------------------------------------- |
@@ -152,13 +152,13 @@ The asset is where you will set the parameters for the Sprite Shape. Angle Range
 | Sprites              | Sprite to be assigned to the particular corner type. |
 
 
-## **Sprite Shape Controller**
+## **SpriteShape Controller**
 
-The Sprite Shape Controller is used on the actual Sprite in the Scene. It has overrides for some the settings from the asset. It also provides finer manipulation for Control Points.
+The SpriteShape Controller is used on the actual Sprite in the Scene. It has overrides for some the settings from the asset. It also provides finer manipulation for Control Points.
 
 | Edit Spline       | Enables editing the Control Points of the Spline |
 | ----------------- | ---------------------------------------- |
-| Sprite Shape      |                                          |
+| SpriteShape      |                                          |
 | **Sorting Layer** |                                          |
 | Order in Layer    |                                          |
 | **Spline**        |                                          |

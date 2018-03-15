@@ -16,7 +16,7 @@ If you want to activate these features in another project:
 {
   "dependencies": {
   "com.unity.2d.common":"1.0.8-experimental",
-  "com.unity.2d.spriteshape":"1.0.8-experimental"
+  "com.unity.2d.spriteshape":"1.0.9-experimental"
   },
   "registry": "https://staging-packages.unity.com"
 }

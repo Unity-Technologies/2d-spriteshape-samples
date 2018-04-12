@@ -14,7 +14,7 @@ using UnityEditor;
 //   you are copying from.
 
 [ExecuteInEditMode]
-public class ConfirmingSpline : MonoBehaviour
+public class ConformingSpline : MonoBehaviour
 {
 
     public GameObject m_ParentObject;

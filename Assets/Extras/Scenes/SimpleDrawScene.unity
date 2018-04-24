@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Spline:
-    m_IsOpenEnded: 0
+    m_IsOpenEnded: 1
     m_ControlPoints:
     - position: {x: -1, y: 0, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
@@ -364,7 +364,7 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
   - {fileID: 21300000, guid: 418ab5c27d3054eb89959d9c715e00c9, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: e74b518a65bc45f4cace9a2fef6af29d, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -374,8 +374,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 1, y: 0, z: 0}
+    m_Center: {x: 0, y: 0.20000002, z: 0}
+    m_Extent: {x: 1, y: 0.20000002, z: 0}
 --- !u!4 &1480543093
 Transform:
   m_ObjectHideFlags: 0

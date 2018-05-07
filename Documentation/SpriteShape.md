@@ -100,7 +100,7 @@ Settings takes effect only if Control Points and their neighbors are to Linear P
 
 **Sprite Shape Controller** component Inspector window and property settings
 
-*Property is only available when a Control Point is selected
+_* Property is only available when a Control Point is selected_
 
 <table>
   <tr>

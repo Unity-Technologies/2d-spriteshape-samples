@@ -20,80 +20,74 @@
 
 <table>
   <tr>
-    <td>Properties</td>
-    <td>Functions</td>
+    <td><b>Properties</b></td>
+    <td><b>Functions</b></td>
   </tr>
   <tr>
-    <td>Control Points</td>
+    <td><b>Control Points</b></td>
     <td>-</td>
   </tr>
   <tr>
-    <td>Use Sprite Borders</td>
+    <td><b>Use Sprite Borders</b></td>
     <td>Control points at both ends of spline path will cap with Sprite Borders</td>
   </tr>
   <tr>
-    <td>Bevel Cutoff</td>
+    <td><b>Bevel Cutoff</b></td>
     <td>Angle that corners become bevels. 
 Only affects a Control Point, if it and its neighbors are all in Linear Point Mode</td>
   </tr>
   <tr>
-    <td>Bevel Size</td>
+    <td><b>Bevel Size</b></td>
     <td>Length of slope at corners.
 Only affects a Control Point, if it and its neighbors are all in Linear Point Mode</td>
   </tr>
   <tr>
-    <td>Fill</td>
+    <td><b>Fill</b></td>
     <td>-</td>
   </tr>
   <tr>
-    <td>Texture</td>
+    <td><b>Texture</b></td>
     <td>Texture used to fill an enclosed spline path.
 Has no effect if Spline is set to 'Open Ended'.</td>
   </tr>
   <tr>
-    <td>Pixels Per Unit</td>
+    <td><b>Pixels Per Unit</b></td>
     <td>Pixels per unit value of the Fill texture. Fill texture scale is adjusted using this value.</td>
   </tr>
   <tr>
-    <td>World Space UV</td>
+    <td><b>World Space UV</b></td>
     <td>Enable to apply fill texture per World Space UV. Disable to apply texture per GameObject UV instead.</td>
   </tr>
   <tr>
-    <td>Offset</td>
+    <td><b>Offset</b></td>
     <td>Amount of texture offset at the edges of the fill texture</td>
   </tr>
   <tr>
-    <td>
-Angle Ranges (tool)</td>
-    <td>
-
-
-
-
-The tool used to assign Sprites to specified angle ranges. </td>
+    <td><b>Angle Ranges (tool)</b></td>
+    <td>The tool used to assign Sprites to specified angle ranges. </td>
   </tr>
   <tr>
-    <td>Start (degrees)</td>
+    <td><b>Start (degrees)</b></td>
     <td>Angle of the starting point for the selected angle range</td>
   </tr>
   <tr>
-    <td>End (degrees)</td>
+    <td><b>End (degrees)</b></td>
     <td>Angle of the ending point for the selected angle range</td>
   </tr>
   <tr>
-    <td>Order</td>
+    <td><b>Order</b></td>
     <td>Determines which Sprites are rendered above others when multiple Sprites overlap. Higher values are rendered above lower ones.</td>
   </tr>
   <tr>
-    <td>Sprites (list)</td>
+    <td><b>Sprites (list)</b></td>
     <td>List of Sprites attached to the currently selected angle range, with 0 being the first Sprite in the list and the default Sprite displayed.</td>
   </tr>
   <tr>
-    <td>Corners</td>
+    <td><b>Corners</b></td>
     <td>-</td>
   </tr>
   <tr>
-    <td><all options></td>
+    <td><b><all options></b></td>
     <td>Assign Sprites to each of the respective corners.
 Settings takes effect only if Control Points and their neighbors are to Linear Point Mode, and Open Ended is unchecked n the Sprite Shape Controller settings</td>
   </tr>
@@ -110,106 +104,103 @@ Settings takes effect only if Control Points and their neighbors are to Linear P
 
 <table>
   <tr>
-    <td>Properties</td>
-    <td>Functions</td>
+    <td><b>Properties</b></td>
+    <td><b>Functions</b></td>
   </tr>
   <tr>
-    <td>Edit Spline</td>
+    <td><b>Edit Spline</b></td>
     <td>Click this button to edit the control points of the current Sprite Shape </td>
   </tr>
   <tr>
-    <td>Point Mode </td>
+    <td><b>Point Mode</b></td>
     <td>Sets the editing mode of the selected control point. Options are disabled if Edit Spline is not enabled</td>
   </tr>
   <tr>
-    <td>
-Linear</td>
+    <td><b>Linear</b></td>
     <td>No curve is created between the two lines at this control point</td>
   </tr>
   <tr>
-    <td>
-Mirrored</td>
+    <td><b>Mirrored</b></td>
     <td>Edits to the tangent is mirrored on both sides of the control point</td>
   </tr>
   <tr>
-    <td>
-Non-Mirrored</td>
+    <td><b>Non-Mirrored</b></td>
     <td>Edit the tangents individually on either side of the control point</td>
   </tr>
   <tr>
-    <td>Snapping</td>
+    <td><b>Snapping</b></td>
     <td>Enable to have Control Points snap using editor snap settings</td>
   </tr>
   <tr>
-    <td>Sprite Shape</td>
+    <td><b>Sprite Shape</b></td>
     <td>The Sprite Shape Profile currently in use</td>
   </tr>
   <tr>
-    <td>Point Position *</td>
+    <td><b>* Point Position</b></td>
     <td>XY coordinates of the selected Control Point</td>
   </tr>
   <tr>
-    <td>Height *</td>
+    <td><b>* Height</b></td>
     <td>The height of Sprites are scaled at the selected Control Point by this value</td>
   </tr>
   <tr>
-    <td>Bevel Cutoff *</td>
+    <td><b>* Bevel Cutoff</b></td>
     <td>Angle at which corners become curved bevels. Overrides original Bevel Cutoff set in the Sprite Shape Profile</td>
   </tr>
   <tr>
-    <td>Bevel Size *</td>
+    <td><b>* Bevel Size</b></td>
     <td>Extent of bevelled curve</td>
   </tr>
   <tr>
-    <td>Sprite Index *</td>
+    <td><b>* Sprite Index</b></td>
     <td>Value determines which Sprite from the Sprite Profile list displays for the selected Control Point </td>
   </tr>
   <tr>
-    <td>Corner *</td>
+    <td><b>* Corner</b></td>
     <td>-</td>
   </tr>
   <tr>
-    <td>Disabled</td>
+    <td><b>Disabled</b></td>
     <td>Default option. The selected Control Point is not automatically assigned a Corner Sprite. </td>
   </tr>
   <tr>
-    <td>Automatically</td>
+    <td><b>Automatically</b></td>
     <td>Enable to apply assigned Corner Sprite to the selected Control Point. 
 
 Note: For the Corner Sprites to appear, the Control Point and its nieghbors must be in Linear Point Mode.</td>
   </tr>
   <tr>
-    <td>Spline</td>
+    <td><b>Spline</b></td>
     <td>-</td>
   </tr>
   <tr>
-    <td>Detail</td>
+    <td><b>Detail</b></td>
     <td>Tessellation quality of rendered Sprite Shape</td>
   </tr>
   <tr>
-    <td>Open Ended</td>
+    <td><b>Open Ended</b></td>
     <td>Enabled by default. Ends of the Spline path remain unconnected.
 
 Uncheck to disable this option. Ends of the Spline path are automatically connected to form an enclosed space, displaying the Fill texture (if set)</td>
   </tr>
   <tr>
-    <td>Adaptive UV</td>
+    <td><b>Adaptive UV</b></td>
     <td>Enable to ensure that Sprite textures are seamlessly connected across the rendered Spline path</td>
   </tr>
   <tr>
-    <td>Collider</td>
+    <td><b>Collider</b></td>
     <td>-</td>
   </tr>
   <tr>
-    <td>Detail</td>
+    <td><b>Detail</b></td>
     <td>Tessellation quality of the collider mesh</td>
   </tr>
   <tr>
-    <td>Corner Type</td>
+    <td><b>Corner Type</b></td>
     <td>Select from Square/Round/Sharp. Determines the shape of corners of the collider mesh</td>
   </tr>
   <tr>
-    <td>Offset</td>
+    <td><b>Offset</b></td>
     <td>Measures the distance of the Collider's edge from the Spline path. When Open Ended is unchecked, positive values expand the mesh outwards, while negative values constricts the mesh inwards.
 
 When Open Ended is checked, only positive values affect the mesh.</td>

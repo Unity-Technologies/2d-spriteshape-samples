@@ -2,7 +2,7 @@
 
 # Overview
 
-**Sprite Shapes** are powerful worldbuilding Assets and tools that allow you to construct entire levels easily and quickly. The following levels are constructed with only **Sprite Shapes.**
+**Sprite Shapes** are powerful worldbuilding Assets and tools that allow you to construct entire levels easily and quickly. The following levels are constructed with only **Sprite Shapes**.
 
 ![image alt text](images/image_0.png)
 
@@ -104,9 +104,9 @@ Settings takes effect only if Control Points and their neighbors are to Linear P
 
 ![image alt text](images/image_4.png)
 
-**Sprite Shape Controller **component Inspector window and property settings
+**Sprite Shape Controller** component Inspector window and property settings
 
-* Property is only available when a Control Point is selected
+*Property is only available when a Control Point is selected
 
 <table>
   <tr>
@@ -219,11 +219,11 @@ When Open Ended is checked, only positive values affect the mesh.</td>
 
 ## Creating a Sprite Shape Profile Asset
 
-The **Sprite Shape Profile **is an Asset that contains Sprites and determines how they behave along a Spline path. To create a **Sprite Shape Profile** Asset, go to **menu: Assets > Create > Sprite Shape Profile **
+The **Sprite Shape Profile** is an Asset that contains Sprites and determines how they behave along a Spline path. To create a **Sprite Shape Profile** Asset, go to **menu: Assets > Create > Sprite Shape Profile**
 
-There are 3 options available: **Empty/Strip/Shape. **Select the **Empty **profile to create the default profile with no preset settings for now. The **Strip **profile contains a single angle range from 180Â° to -180Â°, and the **Shape **profile contains 8 equal angle range segments.
+There are 3 options available: **Empty/Strip/Shape.** Select the **Empty** profile to create the default profile with no preset settings for now. The **Strip** profile contains a single angle range from 180Â° to -180Â°, and the **Shape** profile contains 8 equal angle range segments.
 
-With the newly created **Sprite Shape Profile **Asset selected, go to the Angle Ranges tool in the middle of its Inspector window.
+With the newly created **Sprite Shape Profile** Asset selected, go to the Angle Ranges tool in the middle of its Inspector window.
 
 ## Assigning Sprites and Creating Angle Ranges
 
@@ -237,7 +237,7 @@ To adjust the span and position of an angle range, click and move its endpoints 
 
 ![image alt text](images/image_7.png)
 
-At the bottom of the angle ranges tool, manually adjust the values for the Start and End points of a selected angle range to further refine it. To delete an angle range, first select the range to be removed, then delete it with the **Shift+Del****/Cmd+Del **keys.
+At the bottom of the angle ranges tool, manually adjust the values for the Start and End points of a selected angle range to further refine it. To delete an angle range, first select the range to be removed, then delete it with the **Shift+Del**/**Cmd+Del**keys.
 
 ![image alt text](images/image_8.png)
 
@@ -245,13 +245,13 @@ Beneath the Angle Range tool is a list that shows all the Sprites currently assi
 
 ![image alt text](images/image_9.png)
 
-Drag a **Sprite **onto the title 'Sprites' to add it to the list. Repeat  the same step to add more **Sprites** to the list. The **Sprite **at the top of the list is rendered in the Scene by default, and newer **Sprites **are** **added to the bottom of the list. 
+Drag a **Sprite** onto the title 'Sprites' to add it to the list. Repeat  the same step to add more **Sprites** to the list. The **Sprite** at the top of the list is rendered in the Scene by default, and newer **Sprites** are added to the bottom of the list. 
 
-Drag the leftmost-corners of the **Sprites **up or down to reorder them as needed. The order of the **Sprites **in the list determines their [Sprite Index](#heading=h.y4m8y4ub6hlu) number.
+Drag the leftmost-corners of the **Sprites** up or down to reorder them as needed. The order of the **Sprites**in the list determines their [Sprite Index](#heading=h.y4m8y4ub6hlu) number.
 
 ![image alt text](images/image_10.png)
 
-Selecting a **Sprite **from the list opens a preview of the **Sprite **in the angle range tool. Moving the blue Preview Handle allows you to preview how the Sprite looks at various angles within its angle range.
+Selecting a **Sprite** from the list opens a preview of the **Sprite** in the angle range tool. Moving the blue Preview Handle allows you to preview how the Sprite looks at various angles within its angle range.
 
 ## Editing a Sprite Shape in the Scene
 
@@ -259,9 +259,7 @@ Drag the **Sprite Shape Profile** asset into the Scene View to create a **Sprite
 
 ![image alt text](images/image_11.png)
 
-To edit the Spline path of the **Sprite Shape,** click the *Edit Spline *button to make the Spline path and its Control Points become visible and editable.
-
- 
+To edit the Spline path of the **Sprite Shape,** click *Edit Spline* to make the Spline path and its Control Points become visible and editable.
 
 ![image alt text](images/image_12.png)
 
@@ -269,9 +267,9 @@ Add additional Control Points by clicking anywhere along the Spline. Select and 
 
 ### Control Point Modes
 
-When a Control Point is selected, three modes become available in the Inspector window. These **Point Modes** are *Linear, Mirrored, *are *Non-Mirrored.*
+When a Control Point is selected, three modes become available in the Inspector window. These **Point Modes** are *Linear, Mirrored,* and *Non-Mirrored.*
 
-Point Modes control the behavior of key tangents of a selected Control Point. These tangents control the shape of the curve between them, affecting how the Sprite Shape looks or behaves.
+Point Modes control the behavior of the key tangents of a selected Control Point. These tangents control the shape of the curve between them, affecting how the Sprite Shape looks or behaves.
 
 ![image alt text](images/image_13.png)
 
@@ -295,15 +293,15 @@ Unity extracts the input Sprites of a Sprite Shape horizontally and maps them cl
 
 ![image alt text](images/image_15.png)
 
-With *Open-Ended *left unchecked in the **Sprite Shape Controller**, you can freely extend the Spline path to create platforms or other linear level elements.
+With *Open-Ended* left unchecked in the **Sprite Shape Controller**, you can freely extend the Spline path to create platforms or other level elements.
 
 ![image alt text](images/image_16.png) 
 
-Foliage and tree created  with Open-Ended Sprite Shapes
+Foliage and tree created with Open-Ended Sprite Shapes
 
 ### Enclosed Sprite Shapes
 
 ![image alt text](images/image_17.png)
 
-When the *Open-Ended* property is disabled, the two ends of a Spline path become connected. If a *Fill *texture is defined in the **Sprite Shape Profile**, it is displayed within the enclosed Sprite Shape.
+When the *Open-Ended* property is unchecked, the two ends of a Spline path become connected. If a *Fill* texture is defined in the **Sprite Shape Profile**, it is displayed within the enclosed Sprite Shape.
 

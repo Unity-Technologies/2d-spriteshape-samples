@@ -29,7 +29,7 @@
   </tr>
   <tr>
     <td><b>Use Sprite Borders</b></td>
-    <td>Control points at both ends of spline path will cap with Sprite Borders</td>
+    <td>Control points at both ends of the spline path are capped by Sprite Borders</td>
   </tr>
   <tr>
     <td><b>Bevel Cutoff</b></td>
@@ -52,7 +52,7 @@ Has no effect if Spline is set to 'Open Ended'.</td>
   </tr>
   <tr>
     <td><b>Pixels Per Unit</b></td>
-    <td>Pixels per unit value of the Fill texture. Fill texture scale is adjusted using this value.</td>
+    <td>Pixels per unit value of the Fill texture. Fill texture scale is adjusted by this value.</td>
   </tr>
   <tr>
     <td><b>World Space UV</b></td>
@@ -60,7 +60,7 @@ Has no effect if Spline is set to 'Open Ended'.</td>
   </tr>
   <tr>
     <td><b>Offset</b></td>
-    <td>Amount of texture offset at the edges of the fill texture</td>
+    <td>Amount of offset at the edges of the fill texture</td>
   </tr>
   <tr>
     <td><b>Angle Ranges (tool)</b></td>
@@ -68,11 +68,11 @@ Has no effect if Spline is set to 'Open Ended'.</td>
   </tr>
   <tr>
     <td><b>Start (degrees)</b></td>
-    <td>Angle of the starting point for the selected angle range</td>
+    <td>The starting angle of the selected angle range</td>
   </tr>
   <tr>
     <td><b>End (degrees)</b></td>
-    <td>Angle of the ending point for the selected angle range</td>
+    <td>The ending angle of the selected angle range</td>
   </tr>
   <tr>
     <td><b>Order</b></td>
@@ -87,9 +87,9 @@ Has no effect if Spline is set to 'Open Ended'.</td>
     <td>-</td>
   </tr>
   <tr>
-    <td><b><all options></b></td>
+    <td><b>(all options)</b></td>
     <td>Assign Sprites to each of the respective corners.
-Settings takes effect only if Control Points and their neighbors are to Linear Point Mode, and Open Ended is unchecked n the Sprite Shape Controller settings</td>
+Settings takes effect only if Control Points and their neighbors are to Linear Point Mode, and Open Ended is unchecked in the Sprite Shape Controller properties</td>
   </tr>
 </table>
 
@@ -109,7 +109,7 @@ _* Property is only available when a Control Point is selected_
   </tr>
   <tr>
     <td><b>Edit Spline</b></td>
-    <td>Click this button to edit the control points of the current Sprite Shape </td>
+    <td>Click this to edit the control points of the current Sprite Shape </td>
   </tr>
   <tr>
     <td><b>Point Mode</b></td>
@@ -133,7 +133,7 @@ _* Property is only available when a Control Point is selected_
   </tr>
   <tr>
     <td><b>Sprite Shape</b></td>
-    <td>The Sprite Shape Profile currently in use</td>
+    <td>The Sprite Shape Profile currently selected</td>
   </tr>
   <tr>
     <td><b>* Point Position</b></td>
@@ -145,7 +145,7 @@ _* Property is only available when a Control Point is selected_
   </tr>
   <tr>
     <td><b>* Bevel Cutoff</b></td>
-    <td>Angle at which corners become curved bevels. Overrides original Bevel Cutoff set in the Sprite Shape Profile</td>
+    <td>Angle when corners become curved bevels. Overrides original Bevel Cutoff set in the Sprite Shape Profile</td>
   </tr>
   <tr>
     <td><b>* Bevel Size</b></td>
@@ -212,7 +212,7 @@ When Open Ended is checked, only positive values affect the mesh.</td>
 
 The **Sprite Shape Profile** is an Asset that contains Sprites and determines how they behave along a Spline path. To create a **Sprite Shape Profile** Asset, go to **menu: Assets > Create > Sprite Shape Profile**
 
-There are 3 options available: **Empty/Strip/Shape.** Select the **Empty** profile to create the default profile with no preset settings for now. The **Strip** profile contains a single angle range from 180Â° to -180Â°, and the **Shape** profile contains 8 equal angle range segments.
+There are 3 options available: **Empty/Strip/Shape.** Select the **Empty** profile to create the default profile with no preset settings for now. The **Strip** profile contains a single angle range from 180&deg;C to -180&deg;C, and the **Shape** profile contains 8 equal angle range segments.
 
 With the newly created **Sprite Shape Profile** Asset selected, go to the Angle Ranges tool in the middle of its Inspector window.
 
@@ -220,7 +220,7 @@ With the newly created **Sprite Shape Profile** Asset selected, go to the Angle 
 
 ## ![image alt text](images/image_5.png)
 
-Click the Create Range button under the Angle Ranges tool, or click anyway along the edge of the circle to create an angle range centered around the cursor.
+Click _Create Range_ under the Angle Ranges tool, or click anyway along the edge of the circle to create an angle range centered around the cursor.
 
 ![image alt text](images/image_6.png)
 
@@ -228,7 +228,7 @@ To adjust the span and position of an angle range, click and move its endpoints 
 
 ![image alt text](images/image_7.png)
 
-At the bottom of the angle ranges tool, manually adjust the values for the Start and End points of a selected angle range to further refine it. To delete an angle range, first select the range to be removed, then delete it with the **Shift+Del**/**Cmd+Del**keys.
+At the bottom of the angle ranges tool, manually adjust the values for the Start and End points of a selected angle range to further refine it. To delete an angle range, first select the range to be removed, then delete it with the **Shift+Del**/**Cmd+Del** keys.
 
 ![image alt text](images/image_8.png)
 
@@ -238,7 +238,7 @@ Beneath the Angle Range tool is a list that shows all the Sprites currently assi
 
 Drag a **Sprite** onto the title 'Sprites' to add it to the list. Repeat  the same step to add more **Sprites** to the list. The **Sprite** at the top of the list is rendered in the Scene by default, and newer **Sprites** are added to the bottom of the list. 
 
-Drag the leftmost-corners of the **Sprites** up or down to reorder them as needed. The order of the **Sprites**in the list determines their [Sprite Index](#heading=h.y4m8y4ub6hlu) number.
+Drag the leftmost-corners of the **Sprites** up or down to reorder them as needed. The order of the **Sprites** in the list determines their **Sprite Index** number.
 
 ![image alt text](images/image_10.png)
 
@@ -250,7 +250,7 @@ Drag the **Sprite Shape Profile** asset into the Scene View to create a **Sprite
 
 ![image alt text](images/image_11.png)
 
-To edit the Spline path of the **Sprite Shape,** click *Edit Spline* to make the Spline path and its Control Points become visible and editable.
+To edit the Spline path of the **Sprite Shape**, click *Edit Spline* to make the Spline path and its Control Points become visible and editable.
 
 ![image alt text](images/image_12.png)
 

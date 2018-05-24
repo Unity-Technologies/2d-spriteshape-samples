@@ -8,8 +8,16 @@ public class Sprinkler : MonoBehaviour
 
     public GameObject m_Prefab;
     public float m_RandomFactor = 10.0f;
+    public bool m_UseNormals = false;
 
-    // Use this for initialization
+    float Angle(Vector3 a, Vector3 b)
+    {
+        float dot = Vector3.Dot(a, b);
+        float det = (a.x * b.y) - (b.x * a.y);
+        return Mathf.Atan2(det, dot) * Mathf.Rad2Deg;
+    }
+
+    // Use this for initialization. Plant the Prefabs on Startup
     void Start ()
     {
         SpriteShapeController ssc = GetComponent<SpriteShapeController>();
@@ -17,10 +25,25 @@ public class Sprinkler : MonoBehaviour
 
         for (int i = 1; i < spl.GetPointCount() - 1; ++i)
         {
-            if (Random.Range(0, 100) > m_RandomFactor)
+            if (Random.Range(0, 100) > (100 - m_RandomFactor) )
             {
                 var go = GameObject.Instantiate(m_Prefab);
                 go.transform.position = spl.GetPosition(i);
+
+                if (m_UseNormals)
+                {
+                    Vector3 lt = Vector3.Normalize(spl.GetPosition(i - 1) - spl.GetPosition(i));
+                    Vector3 rt = Vector3.Normalize(spl.GetPosition(i + 1) - spl.GetPosition(i));
+                    Vector3 nt = Vector3.Normalize(lt + rt);
+                    float dotRight = Vector3.Dot(nt, Vector3.right);
+
+                    float a = Angle(Vector3.up, lt);
+                    float b = Angle(lt, rt);
+                    float c = a + (b * 0.5f);
+                    if (b > 0)
+                        c = (180 + c);
+                    go.transform.rotation = Quaternion.Euler(0, 0, c);
+                }
             }
         }
 	}
@@ -28,6 +51,6 @@ public class Sprinkler : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		
-	}
+
+    }
 }

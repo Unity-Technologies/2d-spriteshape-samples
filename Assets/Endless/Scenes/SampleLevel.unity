@@ -333,18 +333,18 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: 3.1778183, y: 5.916415, z: 0}
-      leftTangent: {x: -0.5182266, y: -0.35280657, z: 0}
+      leftTangent: {x: -0.5203781, y: -0.20182276, z: -0}
       rightTangent: {x: 0.5203781, y: 0.20182276, z: 0}
-      mode: 2
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
       corner: 0
     - position: {x: 4.5517845, y: 5.239671, z: 0}
-      leftTangent: {x: -0.32424164, y: 0.49545622, z: 0}
+      leftTangent: {x: -0.43284607, y: 0.66140795, z: -0}
       rightTangent: {x: 0.43284607, y: -0.66140795, z: 0}
-      mode: 2
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -407,6 +407,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: ba90c4c30cc255047bf698d2e33377ab, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 8
   m_ColliderOffset: 0.4
   m_ColliderCornerType: 0
@@ -459,8 +460,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 5.647356, y: 3.5174475, z: 0}
-    m_Extent: {x: 11.501226, y: 3.7730284, z: 0}
+    m_Center: {x: 5.647356, y: 3.5174499, z: 0}
+    m_Extent: {x: 11.501226, y: 3.7730308, z: 0}
 --- !u!4 &120027499
 Transform:
   m_ObjectHideFlags: 0
@@ -516,9 +517,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: -1.6813302, y: -0.93501997, z: 0}
-      leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 0, y: 0, z: 0}
-      mode: 0
+      leftTangent: {x: 1.6235106, y: -0.85060346, z: -0}
+      rightTangent: {x: -1.6235106, y: 0.85060346, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -597,9 +598,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: 12.183049, y: 5.1127224, z: 0}
-      leftTangent: {x: -0.7041168, y: 0.04967594, z: 0}
+      leftTangent: {x: -0.40149212, y: 0.028325558, z: -0}
       rightTangent: {x: 0.40149212, y: -0.028325558, z: 0}
-      mode: 2
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -626,6 +627,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: ba90c4c30cc255047bf698d2e33377ab, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0.37
   m_ColliderCornerType: 0
@@ -678,8 +680,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 6.82329, y: 2.2065022, z: 0}
-    m_Extent: {x: 12.099319, y: 3.5837772, z: 0}
+    m_Center: {x: 6.8239565, y: 2.021421, z: 0}
+    m_Extent: {x: 12.09868, y: 3.7688794, z: 0}
 --- !u!4 &128271163
 Transform:
   m_ObjectHideFlags: 0
@@ -829,6 +831,10 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.7794118, g: 0.5000567, b: 0.45274654, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1001,6 +1007,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 95383667fb3c03d4b94a54c1162224bc, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -1155,6 +1162,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 5f2395b4930a95b4eadb60f8f424b3b8, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -1208,8 +1216,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 0.020326853, y: 2.6293516, z: 0}
-    m_Extent: {x: 2.6760588, y: 1.5638108, z: 0}
+    m_Center: {x: 0.019438863, y: 2.6293516, z: 0}
+    m_Extent: {x: 2.6769466, y: 1.5638108, z: 0}
 --- !u!4 &277958821
 Transform:
   m_ObjectHideFlags: 0
@@ -1311,6 +1319,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 5f2395b4930a95b4eadb60f8f424b3b8, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -1364,8 +1373,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 0.020326853, y: 2.6293516, z: 0}
-    m_Extent: {x: 2.6760588, y: 1.5638108, z: 0}
+    m_Center: {x: 0.019438863, y: 2.6293516, z: 0}
+    m_Extent: {x: 2.6769466, y: 1.5638108, z: 0}
 --- !u!4 &358944937
 Transform:
   m_ObjectHideFlags: 0
@@ -1494,6 +1503,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 8ce17b8e3172c3146a26a11e65f8bb72, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -1547,8 +1557,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -2.4559064, y: 2.4498622, z: 0}
-    m_Extent: {x: 3.868165, y: 2.2339976, z: 0}
+    m_Center: {x: -2.4562516, y: 2.450984, z: 0}
+    m_Extent: {x: 3.8685107, y: 2.2328758, z: 0}
 --- !u!4 &417351584
 Transform:
   m_ObjectHideFlags: 0
@@ -1821,6 +1831,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 60880d1858c4d184bbaba6e494dfaa87, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -2209,6 +2220,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 60880d1858c4d184bbaba6e494dfaa87, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -2444,6 +2456,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: fde6361b6716f614e84bbb2cae33f17e, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -2497,8 +2510,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.32667065, y: 1.0113497, z: 0}
-    m_Extent: {x: 2.0358648, y: 1.8607934, z: 0}
+    m_Center: {x: -0.3266436, y: 1.0113497, z: 0}
+    m_Extent: {x: 2.0358377, y: 1.8607934, z: 0}
 --- !u!4 &485246097
 Transform:
   m_ObjectHideFlags: 0
@@ -2645,6 +2658,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 95383667fb3c03d4b94a54c1162224bc, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -2826,6 +2840,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: fde6361b6716f614e84bbb2cae33f17e, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -2968,6 +2983,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &606364564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3126,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4fee3dcb69da522448efa1d4f169c746, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -3435,6 +3452,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 60880d1858c4d184bbaba6e494dfaa87, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -3643,6 +3661,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4fee3dcb69da522448efa1d4f169c746, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -3779,6 +3798,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 8ce17b8e3172c3146a26a11e65f8bb72, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -3962,6 +3982,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: fde6361b6716f614e84bbb2cae33f17e, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -4015,8 +4036,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.10640967, y: 2.8837805, z: 0}
-    m_Extent: {x: 1.9711398, y: 1.5760775, z: 0}
+    m_Center: {x: -0.10593337, y: 2.8832262, z: 0}
+    m_Extent: {x: 1.971616, y: 1.5766318, z: 0}
 --- !u!4 &1032559391
 Transform:
   m_ObjectHideFlags: 0
@@ -4237,9 +4258,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: -2.51966, y: -5.124096, z: 0}
-      leftTangent: {x: 1.8711076, y: -0.42863798, z: 0}
-      rightTangent: {x: -1.1091764, y: 0.22966766, z: 0}
-      mode: 2
+      leftTangent: {x: 1.1327019, y: -0.0024733543, z: -0}
+      rightTangent: {x: -1.1327019, y: 0.0024733543, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -4266,6 +4287,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: ba90c4c30cc255047bf698d2e33377ab, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 8
   m_ColliderOffset: 0.35
   m_ColliderCornerType: 0
@@ -4421,6 +4443,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 5f2395b4930a95b4eadb60f8f424b3b8, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -4474,8 +4497,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -2.5788362, y: -1.1339921, z: 0}
-    m_Extent: {x: 1.611366, y: 2.6817079, z: 0}
+    m_Center: {x: -2.5788362, y: -1.1323158, z: 0}
+    m_Extent: {x: 1.611366, y: 2.6800318, z: 0}
 --- !u!4 &1099936561
 Transform:
   m_ObjectHideFlags: 0
@@ -4631,6 +4654,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4fee3dcb69da522448efa1d4f169c746, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -4839,6 +4863,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4fee3dcb69da522448efa1d4f169c746, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -5038,6 +5063,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 95383667fb3c03d4b94a54c1162224bc, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -5174,6 +5200,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 8ce17b8e3172c3146a26a11e65f8bb72, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -5227,8 +5254,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.91914403, y: 0.3320434, z: 0}
-    m_Extent: {x: 1.4257978, y: 2.4550543, z: 0}
+    m_Center: {x: -0.91914415, y: 0.3320434, z: 0}
+    m_Extent: {x: 1.4257977, y: 2.4550543, z: 0}
 --- !u!4 &1259323243
 Transform:
   m_ObjectHideFlags: 0
@@ -5316,6 +5343,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1516577031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5404,6 +5432,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 5f2395b4930a95b4eadb60f8f424b3b8, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -5457,8 +5486,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.14546847, y: 2.6018379, z: 0}
-    m_Extent: {x: 3.1450834, y: 1.545913, z: 0}
+    m_Center: {x: -0.14542902, y: 2.6017296, z: 0}
+    m_Extent: {x: 3.1450438, y: 1.5460212, z: 0}
 --- !u!4 &1516577035
 Transform:
   m_ObjectHideFlags: 0
@@ -5671,9 +5700,9 @@ MonoBehaviour:
     m_IsOpenEnded: 0
     m_ControlPoints:
     - position: {x: -3.8661766, y: 3.0839634, z: 0}
-      leftTangent: {x: -1.7676716, y: -1.3628473, z: 0}
-      rightTangent: {x: 1.1043348, y: 0.72401047, z: 0}
-      mode: 2
+      leftTangent: {x: -1.1043358, y: -0.72401047, z: -0}
+      rightTangent: {x: 1.1043358, y: 0.72401047, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -5734,9 +5763,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: 5.597433, y: 4.552302, z: 0}
-      leftTangent: {x: -1.4419937, y: 0.47090197, z: 0}
+      leftTangent: {x: -1.4312115, y: 0.46738148, z: -0}
       rightTangent: {x: 1.4312115, y: -0.46738148, z: 0}
-      mode: 2
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -5779,9 +5808,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: -3.45994, y: -0.30503702, z: 0}
-      leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 0, y: 0, z: 0}
-      mode: 0
+      leftTangent: {x: 0.850027, y: -0.7390383, z: -0}
+      rightTangent: {x: -0.850027, y: 0.7390383, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -5790,6 +5819,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: ba90c4c30cc255047bf698d2e33377ab, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 8
   m_ColliderOffset: 0.37
   m_ColliderCornerType: 0
@@ -5842,8 +5872,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 5.0631104, y: 2.742824, z: 0}
-    m_Extent: {x: 10.049079, y: 3.479414, z: 0}
+    m_Center: {x: 5.117916, y: 2.6156175, z: 0}
+    m_Extent: {x: 9.994273, y: 3.6066206, z: 0}
 --- !u!4 &1623269550
 Transform:
   m_ObjectHideFlags: 0
@@ -5979,9 +6009,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: 8.364357, y: -4.811058, z: 0}
-      leftTangent: {x: 0.8608875, y: 0.01362133, z: 0}
-      rightTangent: {x: -2.7250595, y: -0.043117046, z: 0}
-      mode: 2
+      leftTangent: {x: 1.5162392, y: 0.19421959, z: 0}
+      rightTangent: {x: -1.5162392, y: -0.19421959, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -6051,9 +6081,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: -3.8965654, y: -0.20693493, z: 0}
-      leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 0, y: 0, z: 0}
-      mode: 0
+      leftTangent: {x: -1.5744181, y: -0.21975851, z: -0}
+      rightTangent: {x: 1.5744181, y: 0.21975851, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -6062,6 +6092,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: ba90c4c30cc255047bf698d2e33377ab, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0.4
   m_ColliderCornerType: 0
@@ -6114,8 +6145,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 2.9892712, y: -3.140044, z: 0}
-    m_Extent: {x: 12.001476, y: 3.3647492, z: 0}
+    m_Center: {x: 2.9831023, y: -3.0958128, z: 0}
+    m_Extent: {x: 12.007647, y: 3.410214, z: 0}
 --- !u!4 &1737017261
 Transform:
   m_ObjectHideFlags: 0
@@ -6324,6 +6355,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 5f2395b4930a95b4eadb60f8f424b3b8, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -6377,8 +6409,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.5810765, y: -1.1762944, z: 0}
-    m_Extent: {x: 2.590201, y: 3.047113, z: 0}
+    m_Center: {x: -0.58110034, y: -1.1762944, z: 0}
+    m_Extent: {x: 2.5902247, y: 3.047113, z: 0}
 --- !u!4 &1758524030
 Transform:
   m_ObjectHideFlags: 0
@@ -6629,9 +6661,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: 4.4853935, y: 5.013943, z: 0}
-      leftTangent: {x: -0.32424164, y: 0.49545622, z: 0}
+      leftTangent: {x: -0.43284607, y: 0.66140795, z: -0}
       rightTangent: {x: 0.43284607, y: -0.66140795, z: 0}
-      mode: 2
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -6683,9 +6715,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: 14.925251, y: 0.2935276, z: 0}
-      leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 0, y: 0, z: 0}
-      mode: 0
+      leftTangent: {x: 1.1787013, y: 0.98097765, z: -0}
+      rightTangent: {x: -1.1787013, y: -0.98097765, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -6703,6 +6735,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: ba90c4c30cc255047bf698d2e33377ab, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 8
   m_ColliderOffset: 0.4
   m_ColliderCornerType: 0
@@ -6755,8 +6788,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 5.2760525, y: 3.6211746, z: 0}
-    m_Extent: {x: 11.139748, y: 3.876775, z: 0}
+    m_Center: {x: 5.36145, y: 3.4466972, z: 0}
+    m_Extent: {x: 11.225145, y: 4.0512524, z: 0}
 --- !u!4 &1785742305
 Transform:
   m_ObjectHideFlags: 0
@@ -6903,6 +6936,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 95383667fb3c03d4b94a54c1162224bc, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -7084,6 +7118,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: fde6361b6716f614e84bbb2cae33f17e, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -7137,8 +7172,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.008023202, y: 1.4321374, z: 0}
-    m_Extent: {x: 1.0820539, y: 1.0686315, z: 0}
+    m_Center: {x: -0.0074204206, y: 1.4316566, z: 0}
+    m_Extent: {x: 1.0826567, y: 1.0691123, z: 0}
 --- !u!4 &1863521258
 Transform:
   m_ObjectHideFlags: 0
@@ -7304,6 +7339,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: ba90c4c30cc255047bf698d2e33377ab, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -7620,6 +7656,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: fde6361b6716f614e84bbb2cae33f17e, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -7673,7 +7710,7 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.2593956, y: 0.16447222, z: 0}
+    m_Center: {x: -0.25939566, y: 0.16447222, z: 0}
     m_Extent: {x: 2.0190287, y: 1.8573712, z: 0}
 --- !u!4 &1962007688
 Transform:
@@ -7787,9 +7824,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: 2.1074371, y: 4.6967688, z: 0}
-      leftTangent: {x: -0.64645576, y: -0.48578787, z: 0}
+      leftTangent: {x: -0.48452568, y: -0.26899672, z: -0}
       rightTangent: {x: 0.48452568, y: 0.26899672, z: 0}
-      mode: 2
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -7841,9 +7878,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 0
     - position: {x: 15.180138, y: 5.1666155, z: 0}
-      leftTangent: {x: -0.1458931, y: 0.39768887, z: 0}
-      rightTangent: {x: 0.81082153, y: -2.210192, z: 0}
-      mode: 2
+      leftTangent: {x: -0.8424988, y: 1.1490049, z: 0}
+      rightTangent: {x: 0.8424988, y: -1.1490049, z: 0}
+      mode: 1
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -7870,6 +7907,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: ba90c4c30cc255047bf698d2e33377ab, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 8
   m_ColliderOffset: 0.37
   m_ColliderCornerType: 0
@@ -7922,8 +7960,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 5.6122856, y: 3.2361693, z: 0}
-    m_Extent: {x: 10.452103, y: 3.972762, z: 0}
+    m_Center: {x: 5.6186714, y: 3.236002, z: 0}
+    m_Extent: {x: 10.458488, y: 3.9725943, z: 0}
 --- !u!4 &2003646254
 Transform:
   m_ObjectHideFlags: 0
@@ -8220,6 +8258,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: fde6361b6716f614e84bbb2cae33f17e, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -8273,8 +8312,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.10640967, y: 2.8837805, z: 0}
-    m_Extent: {x: 1.9711398, y: 1.5760775, z: 0}
+    m_Center: {x: -0.10593337, y: 2.8832262, z: 0}
+    m_Extent: {x: 1.971616, y: 1.5766318, z: 0}
 --- !u!4 &2065329298
 Transform:
   m_ObjectHideFlags: 0
@@ -8457,6 +8496,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: fde6361b6716f614e84bbb2cae33f17e, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -8510,7 +8550,7 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.2593956, y: 0.16447222, z: 0}
+    m_Center: {x: -0.25939566, y: 0.16447222, z: 0}
     m_Extent: {x: 2.0190287, y: 1.8573712, z: 0}
 --- !u!4 &2084358722
 Transform:
@@ -8667,6 +8707,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4fee3dcb69da522448efa1d4f169c746, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -8821,6 +8862,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 5f2395b4930a95b4eadb60f8f424b3b8, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -8874,8 +8916,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -0.14546847, y: 2.6018379, z: 0}
-    m_Extent: {x: 3.1450834, y: 1.545913, z: 0}
+    m_Center: {x: -0.14542902, y: 2.6017296, z: 0}
+    m_Extent: {x: 3.1450438, y: 1.5460212, z: 0}
 --- !u!4 &2141009029
 Transform:
   m_ObjectHideFlags: 0
@@ -9211,6 +9253,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 60880d1858c4d184bbaba6e494dfaa87, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0

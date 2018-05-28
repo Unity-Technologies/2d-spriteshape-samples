@@ -152,7 +152,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 7.9789686, y: 1.0975958, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -161,7 +161,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 7.8506713, y: 6.112497, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -170,7 +170,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 15.092591, y: 6.680955, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -179,7 +179,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 14.762008, y: 2.0237372, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -188,7 +188,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 11.123556, y: 2.0659752, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -197,7 +197,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 11.339655, y: -1.4995118, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -206,7 +206,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 14.316193, y: -1.5833294, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -215,7 +215,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 14.611947, y: -5.42808, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -224,7 +224,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 13.400344, y: -5.548135, z: 0}
       leftTangent: {x: 0.70718575, y: 0.07057905, z: 0}
       rightTangent: {x: -2.2711554, y: -0.22666788, z: 0}
@@ -296,7 +296,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: -7.9019413, y: 6.6514535, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -305,7 +305,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 4.092622, y: 6.992023, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -314,10 +314,11 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
   m_SpriteShape: {fileID: 11400000, guid: 0601e9c85e2c2b3409e4c2ae158c2ae7, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -441,6 +442,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4282fa2606e19a8428279fb82dc442e0, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -579,6 +581,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4282fa2606e19a8428279fb82dc442e0, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -717,6 +720,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4282fa2606e19a8428279fb82dc442e0, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 16
   m_ColliderOffset: -1
   m_ColliderCornerType: 0
@@ -905,7 +909,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 9.340155, y: 2.3481538, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -914,7 +918,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 10.57969, y: -5.671833, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -923,7 +927,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 9.61843, y: -5.696316, z: 0}
       leftTangent: {x: 0.4129753, y: -0.11082935, z: 0}
       rightTangent: {x: -1.0299282, y: 0.2764001, z: 0}
@@ -977,7 +981,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: -4.620329, y: 3.6327653, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -986,7 +990,7 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
     - position: {x: 3.7123268, y: 4.5018215, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
@@ -995,10 +999,11 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
   m_SpriteShape: {fileID: 11400000, guid: 0601e9c85e2c2b3409e4c2ae158c2ae7, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -1122,6 +1127,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 4282fa2606e19a8428279fb82dc442e0, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -1296,6 +1302,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 7e75f0c0a9ed8b54089335653d44f287, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -1470,6 +1477,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 7e75f0c0a9ed8b54089335653d44f287, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0

@@ -35,8 +35,6 @@ public class Sprinkler : MonoBehaviour
                     Vector3 lt = Vector3.Normalize(spl.GetPosition(i - 1) - spl.GetPosition(i));
                     Vector3 rt = Vector3.Normalize(spl.GetPosition(i + 1) - spl.GetPosition(i));
                     Vector3 nt = Vector3.Normalize(lt + rt);
-                    float dotRight = Vector3.Dot(nt, Vector3.right);
-
                     float a = Angle(Vector3.up, lt);
                     float b = Angle(lt, rt);
                     float c = a + (b * 0.5f);

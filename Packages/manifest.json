@@ -1,6 +1,5 @@
 {
-	"dependencies": {
-		"com.unity.2d.spriteshape":"1.0.10-preview.1"
-	},
-	"registry": "https://staging-packages.unity.com"
+  "dependencies": {
+    "com.unity.2d.spriteshape":"1.0.12-preview"
+  }
 }

@@ -7,8 +7,7 @@ This repository contains samples of the 2D SpriteShape feature to be used with U
 To get started, download and install the latest Unity 2018.1, here: https://unity3d.com/get-unity/download
 
 ### Get the Package
-These samples already include the necessary manifest in the Packages folder of the project.
-If you want to activate these features in another project, you may use the Package Manager.
+These samples include the necessary manifest in the Packages folder of the project, and do not require the main Package to be downloaded. If you wish to activate these Package features in another project, you may download the Package from the Package Manager.
 
 Find out more about packages here: **[Unity Package Manager](https://docs.unity3d.com/Packages/com.unity.package-manager-ui@1.8/manual/index.html)**
 

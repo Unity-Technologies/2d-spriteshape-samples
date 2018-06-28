@@ -37,15 +37,16 @@ There are two parts to creating and editing Sprite Shapes, namely the **[Sprite 
 |**End (degrees)**|The endpoint for the selected angle range.|
 |&nbsp;&nbsp;**Order**|Determine the priority of Sprites when they overlap each other. Sprites with higher values are rendered above lower ones.|
 |&nbsp;&nbsp;**Sprites (list)**|List of Sprites assigned to the selected angle range. The default Sprite is always the one at the top of the list.|
-|**Corners**|-|
-|&nbsp;&nbsp;**[All Corner options](#AssignCorners)**|Assign selected Sprites to the different corners. When the Sprite Shape is rendered in the Scene, the assigned Sprites are displayed at their respective corners, or is left blank if no Sprite was assigned. <br>Note that a Corner Sprite is only displayed if the Control Point and its neighbors are in Linear Point Mode.|
+|**[Corners](#AssignCorners)**|-|
+|&nbsp;&nbsp;**All Corner options**|Assign selected Sprites to the different corners. When the Sprite Shape is rendered in the Scene, the assigned Sprites are displayed at their respective corners, or is left blank if no Sprite was assigned. <br>Note that a Corner Sprite is only displayed if the Control Point and its neighbors are in Linear Point Mode.|
 
 # <a id="anchor-SS-Control"></a>Sprite Shape Controller
 
 ![SS-Controller Window](images/2D_SpriteShape_6.png)
 <br><sub>Fig 3: Sprite Shape Controller Inspector window</sub><br>
 
-*( + ) - Property is only visible when a Control Point is selected*
+*( + ) - Property is only visible when a Control Point is selected*<p>
+
 |**Property**|**Function**|
 | --- | --- |
 |**Edit Spline**|Enable to edit the Control Points of the current **Sprite Shape**.|

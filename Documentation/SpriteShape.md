@@ -1,4 +1,4 @@
-2D SpriteShape
+2D Sprite Shape
 
 # Overview
 
@@ -13,7 +13,7 @@ In this way, Sprite Shapes are powerful worldbuilding tools that allow you to co
 ![ExampleLvl 3](images/2D_SpriteShape_3.png)
 <br><sub>Fig 1: Examples of level designs using Sprite Shapes</sub></br>
 
-There are two parts to creating and editing Sprite Shapes, namely the **[Sprite Shape Profile](#SS-Profile)**, and the **[Sprite Shape Controller](#anchor-SS-Control)**. The Sprite Shape Profile** **contains the settings for the Sprite Shape Asset, such as all the Sprites included in the shape and the angle ranges that they are assigned to. The Sprite Shape Controller component allows you to edit a Sprite Shapeâ€™s outline into different shapes.
+There are two parts to creating and editing Sprite Shapes, namely the **[Sprite Shape Profile](#SS-Profile)**, and the **[Sprite Shape Controller](#anchor-SS-Control)**. The **Sprite Shape Profile** contains the settings for the Sprite Shape Asset, such as all the Sprites included in the shape and the angle ranges that they are assigned to. The **Sprite Shape Controller** component allows you to edit a Sprite Shape’s outline into different shapes.
 
 # <a id="SS-Profile"></a>Sprite Shape Profile
 
@@ -51,16 +51,16 @@ There are two parts to creating and editing Sprite Shapes, namely the **[Sprite 
 | --- | --- |
 |**Edit Spline**|Enable to edit the Control Points of the current **Sprite Shape**.|
 |**Point Mode**|Set the edit mode of the selected control point. Options are only available if *Edit Spline* is enabled.|
-|&nbsp;&nbsp;<center>![Linear Icon](images/2D_SpriteShape_7.png)<br>**Linear**</sub></center><br>|No BÃ©zier curve is created between the two tangent lines at this Control Point.|
-|&nbsp;&nbsp;<center>![Mirrored Icon](images/2D_SpriteShape_8.png)<br>**Mirrored**</sub></center><br>|A BÃ©zier curve is formed at this Control Point between the two tangent lines. Adjustment made to either tangent is mirrored on the opposite tangent.|
-|&nbsp;&nbsp;<center>![Non-Mirrored Icon](images/2D_SpriteShape_9.png)<br>**Mirrored**</sub></center><br>|A BÃ©zier curve is formed at this Control Point between the two tangent lines. Adjustment made to either tangent is not mirrored on the opposite tangent.|
+|&nbsp;&nbsp;<center>![Linear Icon](images/2D_SpriteShape_7.png)<br>**Linear**</sub></center><br>|No Bézier curve is created between the two tangent lines at this Control Point.|
+|&nbsp;&nbsp;<center>![Mirrored Icon](images/2D_SpriteShape_8.png)<br>**Mirrored**</sub></center><br>|A Bézier curve is formed at this Control Point between the two tangent lines. Adjustment made to either tangent is mirrored on the opposite tangent.|
+|&nbsp;&nbsp;<center>![Non-Mirrored Icon](images/2D_SpriteShape_9.png)<br>**Mirrored**</sub></center><br>|A Bézier curve is formed at this Control Point between the two tangent lines. Adjustment made to either tangent is not mirrored on the opposite tangent.|
 |**Snapping**|Enable to snap Control Points according to the Editor's snap settings.|
 |**Sprite Shape +**|The Sprite Shape Asset rendered.|
 |**Point Position +**|The x,y coordinates of the selected Control Point.|
 |**Height +**|Slider to scale the height of Sprites at the selected Control Point.|
 |**Bevel Cutoff +**|Slider to set the angle cut-off that corners become bevels. Overrides Bevel Cutoff set in the Sprite Shape Profile.|
 |**Bevel Size +**|Slider to set the length of the slant of the bevel.|
-|**Sprite Index +**|Slider to set the Sprite Index number for the Control Point. The Sprite with the same index number from the Sprite Shape Profileâ€™s Sprite list is displayed. Cycle through all Sprites in the list with the â€˜Nâ€™ key when selecting a Control Point.|
+|**Sprite Index +**|Slider to set the Sprite Index number for the Control Point. The Sprite with the same index number from the Sprite Shape Profile’s Sprite list is displayed. Cycle through all Sprites in the list with the ‘N’ key when selecting a Control Point.|
 |**Corner +**|-|
 |&nbsp;&nbsp;Disabled|Default option. The selected Control Point does not automatically display a Corner Sprite.|
 |&nbsp;&nbsp;Automatically|The Control Point displays the assigned Corner Sprite. Note that the Sprites are only displayed if the Control Point and its neighbors are in Linear Point Mode.|
@@ -71,7 +71,7 @@ There are two parts to creating and editing Sprite Shapes, namely the **[Sprite 
 |**Collider**|Note: The following Collider options are only displayed if either the Polygon Collider 2D or Edge Collider 2D component is attached to the Sprite Shape.|
 |&nbsp;&nbsp;Detail|Tessellation quality of the collider mesh.|
 |&nbsp;&nbsp;Corner Type|Select from Square/Round/Sharp. Determines the shape of the collider mesh corners.|
-|&nbsp;&nbsp;Offset|Sets the distance between the Sprite Shapeâ€™s spline path and the Collider mesh's edge.When Open Ended is checked, only positive values affect the mesh.When Open Ended is unchecked, positive values expand the mesh outwards, while negative values constricts the mesh inwards.|
+|&nbsp;&nbsp;Offset|Sets the distance between the Sprite Shape’s spline path and the Collider mesh's edge.When Open Ended is checked, only positive values affect the mesh.When Open Ended is unchecked, positive values expand the mesh outwards, while negative values constricts the mesh inwards.|
 
 # What is a Sprite Shape Profile
 
@@ -102,7 +102,7 @@ A key feature of the **Sprite Shape Profile** is the Angle Ranges tool. Assignin
 ## Creating an Angle Range
 
 1. Click the *Create Range* button at the bottom of the Angle Ranges tool.<br><br>![Create Range arrow](images/2D_SpriteShape_014.png)
-<br><sub>Fig 8: â€˜Create Rangeâ€™ button</sub>
+<br><sub>Fig 8: ‘Create Range’ button</sub>
 
     a. If the button is not visible, select and move the *Preview* *Handle *to an area without an Angle Range. The *Create Range* button should then appear. 
 	<br><br>&nbsp;&nbsp;&nbsp;&nbsp;![Blue preview handle](images/2D_SpriteShape_015.png)<br><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig 9: Selecting the blue Preview Handle</sub>
@@ -167,7 +167,7 @@ The *Strip* preset is ideal to create continuous platforms (see Fig 18). These S
 
 2. Exit the **Sprite Editor** and create a new **Sprite Shape Profile** with the *Strip* preset. <br>![image alt text](images/2D_SpriteShape_027.png)<br><sub>Fig 21: Default Sprite Shape profile for the *Strip *Preset</sub>
 
-3. Assign a Sprite to the only Angle Range in the Preset.<br>![Strip Sprite](images/2D_SpriteShape_028.png)<br><sub>Fig 22: The assigned Sprite appears for all angles in 360Â° range</sub><p>Click and drag the Preview Handle to see how the same Sprite is displayed at every angle in its full 360Â° range. This means that no matter which angle the Sprite Shapeâ€™s, the Sprite is displayed as a continuous tiling pattern that looks like a platform. 
+3. Assign a Sprite to the only Angle Range in the Preset.<br>![Strip Sprite](images/2D_SpriteShape_028.png)<br><sub>Fig 22: The assigned Sprite appears for all angles in 360° range</sub><p>Click and drag the Preview Handle to see how the same Sprite is displayed at every angle in its full 360° range. This means that no matter which angle the Sprite Shape’s, the Sprite is displayed as a continuous tiling pattern that looks like a platform. 
 
 4. Ensure that *Use Sprite Borders* is checked in the Sprite Shape Profile settings.<br>![Use Sprite Borders](images/2D_SpriteShape_029.png)<br><sub>Fig 23: Use *Sprite Borders* must be checked</sub><p>This ensures that the left and right segments defined in Step 2 bookend the endpoints of the Sprite Shape, creating a visually complete platform.
 
@@ -212,7 +212,7 @@ To create a smooth rounded corner at the Control Point, first make sure that the
 
 ![Smooth bevelled curves](images/2D_SpriteShape_035.png)<br><sub>Fig 29: Corner rounded by Bevel settings (note that Sprite Borders are not displayed with Bevels)</sub>
 
-The Control Point first refers to the *Bevel Cutoff* and *Bevel Size* settings in the original **Sprite Shape Profile** Asset to create rounded corners. However, adjusting the same settings in the **Sprite Shape Controller **overrides the original Profile settings. These override values are unique to each Control Point.
+The Control Point first refers to the *Bevel Cutoff* and *Bevel Size* settings in the original **Sprite Shape Profile** Asset to create rounded corners. However, adjusting the same settings in the **Sprite Shape Controller** overrides the original Profile settings. These override values are unique to each Control Point.
 
 ### Mirrored/Non-Mirrored Point Mode
 
@@ -246,7 +246,7 @@ To display a different a Sprite at a Control Point:
 
 2. Check the *Edit Spline* option, and select a Control Point.  
 
-3. Adjust the Control Pointâ€™s *Sprite Index* setting with the slider, or enter the index value. Note that setting the Sprite Index number to one that doesnâ€™t exist in the Sprite List displays the default Sprite instead.
+3. Adjust the Control Point’s *Sprite Index* setting with the slider, or enter the index value. Note that setting the Sprite Index number to one that doesn’t exist in the Sprite List displays the default Sprite instead.
 
 # Closed Sprite Shapes
 
@@ -254,7 +254,7 @@ Although open-ended Sprite Shapes are commonly used to create simple platforms, 
 
 ![Closed Sprite Shape](images/2D_SpriteShape_039.png)<br><sub>Fig 33: Closed Sprite Shape, with automatic Corners and a Fill texture</sub>
 
-Constructing a closed Sprite Shape allows it to use additional Sprite Shape features such as automatic *Corners* and displaying a *Fill* textures. A Sprite Shape becomes â€˜closedâ€™ by clearing the *Open Ended* checkbox in the **Sprite Shape Controller** options (see Fig 34 below). 
+Constructing a closed Sprite Shape allows it to use additional Sprite Shape features such as automatic *Corners* and displaying a *Fill* textures. A Sprite Shape becomes ‘closed’ by clearing the *Open Ended* checkbox in the **Sprite Shape Controller** options (see Fig 34 below). 
 
 ![Clear checkbox](images/2D_SpriteShape_040.png)<br><sub>Fig 34: The *Open Ended* checkbox</sub>
 
@@ -274,13 +274,13 @@ Note that a corner Sprite is only displayed if the Control Point and its neighbo
 
 ## Fill
 
-![Fill texture](images/2D_SpriteShape_043.png)<br><sub>Fig 37: *Fill *settings in the **Sprite Shape Profile**</sub>
+![Fill texture](images/2D_SpriteShape_043.png)<br><sub>Fig 37: *Fill* settings in the **Sprite Shape Profile**</sub>
 
 In the **Sprite Shape Profile**, you can select a texture that automatically fills any closed Sprite Shape derived from the same **Sprite Shape Profile.** This setting has no effect if the Spline is set to *Open Ended*.
 
 The *Pixel Per Unit *setting allows you to scale the Fill texture, while the *Offset* slider allows the Fill texture to bleed out or retract from the edges of the Sprite Shape if needed.
 
-Enabling the *World Space UV* setting causes the Fill texture to refer to the World Space UV, instead of per Object UV. By default, *World Space UV* is disabled, and each Sprite Shapeâ€™s Fill texture refers to its own Object UV (see Fig 37).
+Enabling the *World Space UV* setting causes the Fill texture to refer to the World Space UV, instead of per Object UV. By default, *World Space UV* is disabled, and each Sprite Shape’s Fill texture refers to its own Object UV (see Fig 37).
 
 ![Per object UV](images/2D_SpriteShape_044.png)<br><sub>Fig 37: Two Sprite Shapes from the same **Sprite Shape Profile**, *World Space UV* unchecked</sub>
 
@@ -294,17 +294,16 @@ To enable your Sprite Shape to respond to 2D physics, attach a **Collider 2D** c
 
 ![Component List](images/2D_SpriteShape_046.png)<br><sub>Fig 39: List of Collider 2D components</sub> 
 
-All Collider 2D components can be used, except for the *Tilemap Collider 2D*. However, the **Sprite Shape Controllerâ€™s** Collider properties are only available if either a *Polygon Collider 2D* or *Edge Collider 2D* is attached.
+All Collider 2D components can be used, except for the *Tilemap Collider 2D*. However, the **Sprite Shape Controller’s** Collider properties are only available if either a *Polygon Collider 2D* or *Edge Collider 2D* is attached.
 
 ![Polygon default colllider](images/2D_SpriteShape_047.png)<br><sub>Fig 40: Polygon Collider 2D green outline over Sprite Shape</sub>
 
-When first attached, the Colliderâ€™s mesh and outline does not match the Sprite Shape (see Fig 40). To automatically match the Collider mesh to the Sprite Shape, go to the Sprite Shape Controllerâ€™s *Collider* settings (see Fig 41), and check the *Update Collider* checkbox.
+When first attached, the Collider’s mesh and outline does not match the Sprite Shape (see Fig 40). To automatically match the Collider mesh to the Sprite Shape, go to the Sprite Shape Controller’s *Collider* settings (see Fig 41), and check the *Update Collider* checkbox.
 
 ![Match](images/2D_SpriteShape_048.png)<br><sub>Fig 41: *Update Collider *automatically edits the Colldier outline to match the Sprite Shape</sub>
 
-To make manual edits to the Collider mesh, go to the componentâ€™s settings and enable *Edit Collider* to move and create the Collider meshâ€™s control points (see Fig 42).
+To make manual edits to the Collider mesh, go to the component’s settings and enable *Edit Collider* to move and create the Collider mesh’s control points (see Fig 42).
 
 ![Edit Collider](images/2D_SpriteShape_049.png)<br><sub>Fig 42: Editing the Collider mesh manually</sub>
 
 Note that Colliders are unique to each instance of the **Sprite Shape Profile** in the Scene. To duplicate a Collider mesh, you must duplicate the entire Sprite Shape object it is attached to as well.
-

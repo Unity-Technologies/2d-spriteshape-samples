@@ -1,4 +1,4 @@
-2D Sprite Shape
+2D SpriteShape
 
 # Overview
 

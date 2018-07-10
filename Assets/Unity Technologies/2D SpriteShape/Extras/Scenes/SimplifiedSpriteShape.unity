@@ -219,6 +219,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 19b9cf308de41834c9968d12bec673b1, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
+  m_UpdateCollider: 0
   m_ColliderDetail: 4
   m_ColliderOffset: 0
   m_ColliderCornerType: 0
@@ -333,7 +334,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:

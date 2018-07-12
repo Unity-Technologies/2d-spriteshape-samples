@@ -375,8 +375,8 @@ SpriteShapeRenderer:
   - {fileID: 21300012, guid: a8321f6fae34f034787010a903e29648, type: 3}
   - {fileID: 21300008, guid: a8321f6fae34f034787010a903e29648, type: 3}
   m_LocalAABB:
-    m_Center: {x: -0.46195698, y: 0.112298965, z: 0}
-    m_Extent: {x: 16.012177, y: 7.3646555, z: 0}
+    m_Center: {x: -0.6204653, y: 0.112298965, z: 0}
+    m_Extent: {x: 16.170685, y: 7.3646555, z: 0}
 --- !u!4 &148932351
 Transform:
   m_ObjectHideFlags: 0
@@ -774,8 +774,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 2.0302398, y: 1.3312354, z: 0}
-    m_Extent: {x: 6.8089314, y: 1.733732, z: 0}
+    m_Center: {x: 2.0302398, y: 1.3740253, z: 0}
+    m_Extent: {x: 6.8089314, y: 1.7765219, z: 0}
 --- !u!4 &1108206412
 Transform:
   m_ObjectHideFlags: 0
@@ -831,6 +831,10 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.52205884, g: 0.62881726, b: 1, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -841,7 +845,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.27
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -30,14 +30,14 @@ In this way, Sprite Shapes are powerful worldbuilding tools that allow you to co
 ![ExampleLvl 2](images/2D_SpriteShape_2.png)
 
 ![ExampleLvl 3](images/2D_SpriteShape_3.png)
-<br><sub>Fig 1: Examples of level designs using Sprite Shapes</sub></br>
+<br><sub>Fig 1: Examples of level designs using **Sprite Shapes**</sub></br>
 
 There are two parts to creating and editing Sprite Shapes, namely the **[Sprite Shape Profile](#SS-Profile)**, and the **[Sprite Shape Controller](#SS-Control)**. The **Sprite Shape Profile** contains the settings for the Sprite Shape Asset, such as all the Sprites included in the shape and the angle ranges that they are assigned to. The **Sprite Shape Controller** component allows you to edit a Sprite Shape’s outline into different shapes.
 
 # <a id="SS-Profile"></a>Sprite Shape Profile
 
 ![SpriteShape Profile window](images/2D_SpriteShape_4.png)
-<br><sub>Fig 2: Sprite Shape Profile Inspector window and settings</sub>
+<br><sub>Fig 2: **Sprite Shape Profile** Inspector window and settings</sub>
 <br><br>
 
 |**Property**|**Function**|
@@ -62,7 +62,7 @@ There are two parts to creating and editing Sprite Shapes, namely the **[Sprite 
 # <a id="SS-Control"></a>Sprite Shape Controller
 
 ![SS-Controller Window](images/2D_SpriteShape_6.png)
-<br><sub>Fig 3: Sprite Shape Controller Inspector window</sub><br>
+<br><sub>Fig 3: **Sprite Shape Controller** Inspector window</sub><br>
 
 *( + ) - Property is only visible when a Control Point is selected*<p>
 
@@ -94,7 +94,7 @@ There are two parts to creating and editing Sprite Shapes, namely the **[Sprite 
 
 # <a id="Whatis"></a>What is a Sprite Shape Profile
 
-To use a Sprite Shape, you begin by creating a **Sprite Shape Profile**. A Sprite Shape Profile is an Asset that contains the Sprites that make up the Sprite Shape, and settings such as the angles that those Sprites are displayed at. 
+To use a **Sprite Shape**, you begin by creating a **Sprite Shape Profile**. A Sprite Shape Profile is an Asset that contains the Sprites that make up the Sprite Shape, and settings such as the angles that those Sprites are displayed at. 
 
 Go to **Assets** > **Create** > **Sprite Shape Profile**, and there are three *Profile* options available - *Empty, Strip, Shape*
 
@@ -104,103 +104,86 @@ The *Empty* profile is the default, and contains no preset settings or angle ran
 <br><sub>Fig 4: Example of Platform created from the *Strip* preset</sub>
 
 ![Curved Treeline](images/2D_SpriteShape_011.png)
-<br><sub>Fig 5: Example of background treeline element created from the *Strip* preset</sub><br>
-
-The *Shape* preset comes with 8 equal Angle Ranges. After assigning Sprites to each range, dragging the Sprite Shape onto the Scene creates an enclosed Sprite Shape.  If a Fill texture is set, then the Sprite Shape displays the Fill texture within itself. This makes Sprite Shapes useful for creating and shaping backgrounds, platforms, or other kinds of worldbuilding elements in your Project.
+<br><sub>Fig 5: Example of background treeline element created from the *Strip* preset</sub><p></p>
+The *Shape* preset (see Fig 6 below) comes with 8 preset Angle Ranges. By assigning Sprites to each range, an 8-sided [closed Sprite Shape](#closed-SS) is created when the Sprite Shape is dragged onto a Scene. Rearranging or resizing the control points of this Sprite Shape causes the Sprites to react to changes in angles and [automatically switch](#MultiRange) to the correct Sprite for that angle range.
 
 ![Shape preset made platform](images/2D_SpriteShape_012.png)
 <br><sub>Fig 6: An example platform created from the *Shape* preset</sub>
+<p>
+If a Fill texture is set, then a closed Sprite Shape also displays the Fill texture within itself. This makes closed Sprite Shapes especially useful for creating and shaping backgrounds, platforms, or other kinds of worldbuilding elements for your Project.
 
 # <a id="CreateSSProfile"></a>Creating a Sprite Shape Profile
 
 ![Angle Ranges Tool](images/2D_SpriteShape_013.png)
 <br><sub>Fig 7: The Angle Ranges tool</sub><br>
 
-A key feature of the **Sprite Shape Profile** is the Angle Ranges tool. Assigning an Angle Range determines what Sprite is displayed at specific angles, as the Sprite Shape is deformed in the Scene.
+A key feature of the **Sprite Shape Profile** is the Angle Ranges tool. Assigning an Angle Range determines what Sprite is displayed at specific angles.  
 
 ## <a id="AngleRange"></a>Creating an Angle Range
 
 1. Click the *Create Range* button at the bottom of the Angle Ranges tool.<br><br>![Create Range arrow](images/2D_SpriteShape_014.png)
 <br><sub>Fig 8: ‘Create Range’ button</sub>
 
-    a. If the button is not visible, select and move the *Preview* *Handle *to an area without an Angle Range. The *Create Range* button should then appear. 
-	<br><br>&nbsp;&nbsp;&nbsp;&nbsp;![Blue preview handle](images/2D_SpriteShape_015.png)<br><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig 9: Selecting the blue Preview Handle</sub>
+   - If the button is not visible, select and move the *Preview Handle* to an area without an Angle Range. The *Create Range* button should then appear. 
+	![Blue preview handle](images/2D_SpriteShape_015.png)<p><sub>Fig 9: Selecting the blue Preview Handle</sub>
 
 2.  An Angle Range is created centred on the *Preview Handle.*<br><br>![Angle Range on preview handle](images/2D_SpriteShape_016.png)<br><sub>Fig 10: Blue area shows active Angle Range</sub>
 
-    b. Another way to create an Angle Range is to hover the mouse over an empty area along the range circle. An outline appears to show the possible range.<br>&nbsp;&nbsp;&nbsp;&nbsp;![Angle Range outline](images/2D_SpriteShape_017.png)<br><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig 11: Creating an Angle Range on an empty space</sub>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;Left-click to create a range in the highlighted area.
+    - Another way to create an Angle Range is to hover the mouse over an empty area of the circle range. An outline appears to show the possible range.
+	<br>![Angle Range outline](images/2D_SpriteShape_017.png)<br><sub>Fig 11: Creating an Angle Range on an empty space</sub><p>Left-click to create a range in the highlighted area.
 
-	c. The range covered by the currently selected Angle Range is displayed at the bottom of the tool.
-	<br>&nbsp;&nbsp;&nbsp;&nbsp;![Angle Range values](images/2D_SpriteShape_018.png)<br><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig 12: Enter the respective values here</sub>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;Edit a range by entering new values into *Start* and *End*, or drag either endpoint to the desired angles. Note that the endpoint of a range cannot be extended into a neighboring range.
-
-4. To delete an Angle Range, select the range then press the **Del/Delete** key.
+	- The range covered by the currently selected Angle Range is displayed at the bottom of the tool.
+	<br>![Angle Range values](images/2D_SpriteShape_018.png)<br><sub>Fig 12: Enter the respective values here</sub><p>Edit a range by entering new values into *Start* and *End*, or drag either endpoint to the desired angles. The endpoint of a range cannot be extended into a neighboring range.<p></p>
+3. To delete an Angle Range, select the range then press the **Del/Delete** key.
 
 ## <a id="AssignSprite"></a>Assigning Sprites
 
-After creating an Angle Range, the next step is to assign Sprites to that range.
+After creating an **Angle Range**, the next step is to assign Sprites to that range.
 
 ![Sprite List](images/2D_SpriteShape_019.png)<br><sub>Fig 13: The empty default Sprite List</sub>
 
-Beneath the **Angle Ranges** tool is the **Sprites** list that shows all the Sprites currently assigned to that range.
+Beneath the Angle Ranges tool is the **Sprites** list that shows all the Sprites currently assigned to that range.
 
 ![Add row](images/2D_SpriteShape_020.png)
 <br><sub>Fig 14: Adding a Sprite row to the list</sub>
 
-To add Sprites to the list, click the **+** icon to insert a new row to the list.  Click the circle icon next to the empty row to open the **Object Picker** window, which displays all available Sprites in the project.
+To add Sprites to the list, click the **+** icon to insert a new row and Sprite to the list.  Click the circle icon next to the empty row to open the **Object Picker** window, which displays all available Sprites in the project.
 
 ![Drag drop to row](images/2D_SpriteShape_021.png)
 <br><sub>Fig 15: Dragging a Sprite onto a row</sub>
 
-Another way to add Sprites is to simply drag a Sprite onto a row to add it. Repeat the same steps to add more Sprites to the list. The default Sprite displayed is the one at the top of the list. The other Sprites in the list are displayed by referring to their respective Sprite Index numbers. 
+Another way to add Sprites is to simply drag a Sprite onto a row to add it. A single Angle Range can have multiple Sprites assigned to it, one per row. Only the Sprite at the top of the list is displayed by default. The other Sprites in the list are displayed by changing to their respective **[Sprite Index](#sprite-index)** numbers in the **Sprite Shape Controller** settings. 
 
-Drag the leftmost ends of the rows up or down to reorder them. Changing the order of the Sprite rows also changes their [Sprite Index](#heading=h.y4m8y4ub6hlu) number. 
+Drag the leftmost ends of the rows up or down to reorder them. Changing the order of the Sprite rows also changes their respective **Sprite Index** number. 
 
 ## <a id="MultiRange"></a>Preview Multiple Angle Ranges
 
 After creating multiple Angle Ranges and assigning different Sprites, you can preview the Sprites as they appear at their assigned angles by rotating the Preview Handle around the tool. 
 
 ![Angle preview 1](images/2D_SpriteShape_022.png)
-<br><sub>Fig 16: Sprites are displayed within the Angle Range they are assigned to</sub>
-
+<br><sub>Fig 16: Sprites are displayed within the Angle Range they are assigned to</sub><br></br><br></br>
 ![Angle preview 2](images/2D_SpriteShape_023.png)
 <br><sub>Fig 17: Rotate the Preview Handle to preview the assigned Sprites at each angle</sub>
 
 # <a id="OpenEnd"></a>Open-Ended Sprite Shapes
 
-The *Strip* preset is ideal to create continuous platforms (see Fig 18). These Sprite Shapes can be extended or deformed as needed for your Project, with the Sprites automatically tiling along the spline path.<p>
-![Example repeat](images/2D_SpriteShape_024.png)<br><sub>Fig 18: Sprite Shape forming a continuous platform along the spline path</sub>
+The *Strip* preset is ideal to create continuous platforms (see Fig 18). These Sprite Shapes can be extended or deformed as needed for your Project, with the Sprites automatically tiling along the spline path.<p>![Example repeat](images/2D_SpriteShape_024.png)<br><sub>Fig 18: Sprite Shape forming a continuous platform along the spline path</sub>
 
-1. First, prepare the base Sprite correctly before it is used into the Sprite Shape Profile.<br>![Base Sprite](images/2D_SpriteShape_025.png)<br><sub>Fig 19: The original Sprite</sub>
+1. First, prepare the base Sprite correctly before it is used into the Sprite Shape Profile.<br>![Base Sprite](images/2D_SpriteShape_025.png)<p><sub>Fig 19: The original Sprite</sub><p>Import the Sprite into the Project, and open the [Sprite Editor](https://docs.unity3d.com/Manual/SpriteEditor.html) to edit its borders.<p>![Sprite Editing borders](images/2D_SpriteShape_026.png)<br><sub>Fig 20: Creating borders in the Sprite Editor</sub><p>The Sprite border appears as as a green outline along the edges of the Sprite. Click and drag the Control Points of the border to change its size and shape. Divide the Sprite into 3 sections - a middle section that will be repeatedly tiled, and two sections that border the middle to act as bookends.<p>With the *Strip* preset settings, the middle section is tiled along the spline path, and both ends of the Sprite Shape can be capped by the left and right sections defined in Fig 20.<p>Select **Apply** to save these new Sprite borders.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Import the Sprite into the Project, and open the [Sprite Editor](https://docs.unity3d.com/Manual/SpriteEditor.html) to edit its borders.
+2. Exit the **Sprite Editor** and create a new **Sprite Shape Profile** with the *Strip* preset.<p>![image alt text](images/2D_SpriteShape_027.png)<br><sub>Fig 21: Default Sprite Shape profile for the *Strip* Preset</sub>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Sprite Editing borders](images/2D_SpriteShape_026.png)<br><sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig 20: Creating borders in the Sprite Editor</sub>
+3. Assign a Sprite to the **Angle Range**.<p>![Strip Sprite](images/2D_SpriteShape_028.png)<br><sub>Fig 22: The assigned Sprite appears for all angles in 360° range</sub><p>Click and drag the Preview Handle to see how the same Sprite is displayed at every angle in its full 360° range. This means that no matter which angle the Sprite Shape’s, the Sprite is displayed as a continuous tiling pattern that looks like a platform. 
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The border is shown as a green outline along the edge of the Sprite. Click and drag the Control Points for the border on either side, and divide the Sprite into 3 sections - a middle section to be repeatedly tiled, and two to be bookends to the tiled path.
+4. Ensure that *Use Sprite Borders* is checked in the **Sprite Shape Profile** settings.<p>![Use Sprite Borders](images/2D_SpriteShape_029.png)<br><sub>Fig 23: Use *Sprite Borders* must be checked</sub><p>This ensures that the left and right segments defined in Step 2 bookend the endpoints of the Sprite Shape, creating a visually complete platform.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With the *Strip* preset settings, the middle section is tiled along the spline path, and both ends of the Sprite Shape can be capped by the left and right sections defined in Fig 20.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click **Apply** to save these new Sprite borders.
-
-2. Exit the **Sprite Editor** and create a new **Sprite Shape Profile** with the *Strip* preset. <br>![image alt text](images/2D_SpriteShape_027.png)<br><sub>Fig 21: Default Sprite Shape profile for the *Strip *Preset</sub>
-
-3. Assign a Sprite to the only Angle Range in the Preset.<br>![Strip Sprite](images/2D_SpriteShape_028.png)<br><sub>Fig 22: The assigned Sprite appears for all angles in 360° range</sub><p>Click and drag the Preview Handle to see how the same Sprite is displayed at every angle in its full 360° range. This means that no matter which angle the Sprite Shape’s, the Sprite is displayed as a continuous tiling pattern that looks like a platform. 
-
-4. Ensure that *Use Sprite Borders* is checked in the Sprite Shape Profile settings.<br>![Use Sprite Borders](images/2D_SpriteShape_029.png)<br><sub>Fig 23: Use *Sprite Borders* must be checked</sub><p>This ensures that the left and right segments defined in Step 2 bookend the endpoints of the Sprite Shape, creating a visually complete platform.
-
-5. Drag the **Sprite Shape Profile** into the Scene to create a Sprite Shape GameObject based on the Profile settings.<br>![Dragging into Scene](images/2D_SpriteShape_030.png)<br><sub>Fig 24: Sprite Shape Asset is brought into the Scene</sub>
-
-To continue editing the Sprite Shape within the Scene, you need to adjust the settings in the **[Sprite Shape Controller](#UseSS-Control)** component. It is automatically attached to the Sprite Shape once it is dragged into the Scene or Hierarchy.
+5. Drag the **Sprite Shape Profile** into the Scene to create a Sprite Shape GameObject based on the Profile settings.<p>![Dragging into Scene](images/2D_SpriteShape_030.png)<br><sub>Fig 24: Sprite Shape Asset is brought into the Scene</sub><p>To continue editing the Sprite Shape within the Scene, you need to adjust the settings in the **[Sprite Shape Controller](#UseSS-Control)** component. It is automatically attached to the Sprite Shape once it is dragged into the Scene or Hierarchy.
 
 # <a id="closed-SS"></a>Closed Sprite Shapes
 
-Although open-ended Sprite Shapes are commonly used to create simple platforms, closed Sprite Shapes are useful when creating certain kinds of level designs. For example, to create a background wall or large platforms.
+Use closed Sprite Shapes ton construct large sections of a level that contains a Fill texture, such as a background wall or a large platform.
 
-![Closed Sprite Shape](images/2D_SpriteShape_039.png)<br><sub>Fig 25: Closed Sprite Shape, with automatic Corners and a Fill texture</sub>
-
-Create a Closed Sprite Shape by clearing the *Open Ended* checkbox in the **Sprite Shape Controller** options (see Fig 26 below). This causes the two endpoints of an Open-Ended Sprite Shape to automatically connect and form an enclosed shape.
+![Closed Sprite Shape](images/2D_SpriteShape_039.png)<br><sub>Fig 25: Closed Sprite Shape, with automatic *Corners* and a *Fill* texture enabled</sub><p>Create a closed Sprite Shape by clearing the *Open Ended* checkbox in the **Sprite Shape Controller** options (see Fig 26). This causes the two endpoints of an open-ended Sprite Shape to automatically connect and form a closed shape.
 
 ![Clear checkbox](images/2D_SpriteShape_040.png)<br><sub>Fig 26: The *Open Ended* checkbox</sub>
 
@@ -229,21 +212,18 @@ Once **Edit Spline** is enabled, you can do the following:
 
 When a Control Point is selected, its **Point Mode** can be changed into one of 3 modes- *Linear*, *Mirrored*, and *Non-Mirrored*. 
 
-**Point Modes** control the behavior of tangent lines on the selected Control Point. These tangents control the shape of the curve between them, and affects how the Sprite Shape deforms. Each Control Point in a Sprite Shape can also be set to a different **Point Mode**, with its own unique settings.
+**Point Modes** control the behavior of tangent lines on the selected Control Point. These tangents control the shape of the curve between them, and affects how the Sprites between Control Points are deformed. Each Control Point in a Sprite Shape has its own unique Point Mode settings.
 
 ### Linear Point Mode
-
-In *Linear Point Mode*, there are no tangent lines to control the curve between the Control Point and its neighbors. Instead, the corners between Control Points are rounded off via the *Bevel Cutoff* and *Bevel Size* settings.
+In *Linear* Point Mode, there are no tangent lines to control the curve between the Control Point and its neighbors. When a Control Point and its immediate neighbors are **all** set to *Linear* Point mode, the corners between them can only be rounded via the *Bevel Cutoff* and *Bevel Size* settings.
 
 ![Linear point mode](images/2D_SpriteShape_034.png)<br><sub>Fig 30: *Linear Point Mode*</sub>
 
-A Control Point in the default Linear Point Mode and Bevel settings set to 0
-
-To create a smooth rounded corner at the Control Point, first make sure that the selected Control Point and its connected neighbors all are set to *Linear Point Mode*. 
+The *Bevel* settings are ignored if any of the Control Point's immediate neighbors is set to a non-*Linear* Point Mode.
 
 ![Smooth bevelled curves](images/2D_SpriteShape_035.png)<br><sub>Fig 31: Corner rounded by Bevel settings (note that Sprite Borders are not displayed with Bevels)</sub>
 
-The Control Point first refers to the *Bevel Cutoff* and *Bevel Size* settings in the original **Sprite Shape Profile** Asset to create rounded corners. However, adjusting the same settings in the **Sprite Shape Controller** overrides the original Profile settings. These override values are unique to each Control Point.
+The Control Point first refers to the *Bevel Cutoff* and *Bevel Size* settings in the original **Sprite Shape Profile** Asset. Adjusting the same settings in the **Sprite Shape Controller** from their default of 0 causes them to override the original Profile settings.
 
 ### Mirrored/Non-Mirrored Point Mode
 
@@ -281,7 +261,7 @@ To display a different a Sprite at a Control Point:
 
 ## <a id="AssignCorners"></a>Corners
 
-The *Corners* settings displays the list of Sprites that are currently assigned to their respective corners (see Fig 35 below).
+The *Corners* settings displays the list of Sprites that are currently assigned to their respective corners (see Fig 35 below). These Sprites are automatically assigned if the *Corner* setting in the **Sprite Shape Controller** is set to *Automatic*.
 
 ![Corners list](images/2D_SpriteShape_041.png)<br><sub>Fig 35: Corner settings in the **Sprite Shape Profile**</sub>
 

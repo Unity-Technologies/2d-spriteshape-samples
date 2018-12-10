@@ -1,22 +1,42 @@
 fileFormatVersion: 2
 guid: a8321f6fae34f034787010a903e29648
-timeCreated: 1508747013
-licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: CWall_TopLeft
-    21300002: CWall_Top
-    21300004: CWall_TopRight
-    21300006: CWall_Right
-    21300008: CWall_BottomRight
-    21300010: CWall_Bottom
-    21300012: CWall_BottomeLeft
-    21300014: CWall_Left
-    21300016: CastleWall_0
-    21300018: CastleBlock01
-    21300020: CastleWall_Stand
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: CWall_TopLeft
+  - first:
+      213: 21300002
+    second: CWall_Top
+  - first:
+      213: 21300004
+    second: CWall_TopRight
+  - first:
+      213: 21300006
+    second: CWall_Right
+  - first:
+      213: 21300008
+    second: CWall_BottomRight
+  - first:
+      213: 21300010
+    second: CWall_Bottom
+  - first:
+      213: 21300012
+    second: CWall_BottomeLeft
+  - first:
+      213: 21300014
+    second: CWall_Left
+  - first:
+      213: 21300016
+    second: CastleWall_0
+  - first:
+      213: 21300018
+    second: CastleBlock01
+  - first:
+      213: 21300020
+    second: CastleWall_Stand
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 8
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -34,6 +54,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -44,7 +66,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -53,21 +75,24 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -77,7 +102,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -87,7 +113,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: iPhone
+  - serializedVersion: 2
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -97,7 +124,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: tvOS
+  - serializedVersion: 2
+    buildTarget: tvOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -107,7 +135,19 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: WebGL
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -142,6 +182,13 @@ TextureImporter:
         - {x: 32, y: -32}
         - {x: 32, y: 32}
       tessellationDetail: 0
+      bones: []
+      spriteID: beaa1a4d42a312240b53861bc81c02b7
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CWall_Top
       rect:
@@ -164,6 +211,13 @@ TextureImporter:
         - {x: 95.5, y: -32}
         - {x: 95.5, y: 32}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1a60a75b7e4bb5146bea256af052c4f6
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CWall_TopRight
       rect:
@@ -186,6 +240,13 @@ TextureImporter:
         - {x: 32, y: -32}
         - {x: 32, y: 32}
       tessellationDetail: 0
+      bones: []
+      spriteID: 869abee1c3caab44b8fafc2b89188e56
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CWall_Right
       rect:
@@ -208,6 +269,13 @@ TextureImporter:
         - {x: 96, y: -32}
         - {x: 96, y: 32}
       tessellationDetail: 0
+      bones: []
+      spriteID: c3552f64b7b0e75469723be337164bfc
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CWall_BottomRight
       rect:
@@ -230,6 +298,13 @@ TextureImporter:
         - {x: 32, y: -32}
         - {x: 32, y: 32}
       tessellationDetail: 0
+      bones: []
+      spriteID: bead5d6adff28e74fa3f7f01b27405a8
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CWall_Bottom
       rect:
@@ -252,6 +327,13 @@ TextureImporter:
         - {x: 96, y: -32}
         - {x: 96, y: 32}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d8325161e5dc3f44863554dc4b1b642
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CWall_BottomeLeft
       rect:
@@ -274,6 +356,13 @@ TextureImporter:
         - {x: 32, y: -32}
         - {x: 32, y: 32}
       tessellationDetail: 0
+      bones: []
+      spriteID: d8fbaa20396dd824c942981047cd7599
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CWall_Left
       rect:
@@ -296,6 +385,13 @@ TextureImporter:
         - {x: 96, y: -32}
         - {x: 96, y: 32}
       tessellationDetail: 0
+      bones: []
+      spriteID: f6981c8fe83164d47b10d844a973c2d0
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CastleBlock01
       rect:
@@ -322,6 +418,13 @@ TextureImporter:
         - {x: 128.5, y: -2}
         - {x: 128.5, y: 64}
       tessellationDetail: 0
+      bones: []
+      spriteID: f7ffd62d01d7e2b4bb85175b26ce02cc
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CastleWall_0
       rect:
@@ -356,9 +459,26 @@ TextureImporter:
         - {x: 77.5, y: 47.5}
         - {x: 77.5, y: 63.5}
       tessellationDetail: 0
+      bones: []
+      spriteID: ea33b6533f0182347a3a7249fa2c3c3f
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 1
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

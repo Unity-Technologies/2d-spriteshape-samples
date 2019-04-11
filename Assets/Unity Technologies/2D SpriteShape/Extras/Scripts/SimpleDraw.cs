@@ -16,9 +16,28 @@ public class SimpleDraw : MonoBehaviour
     {
         
     }
-    
-	// Update is called once per frame
-	void Update ()
+
+    private void Smoothen(SpriteShapeController sc, int pointIndex)
+    {
+        Vector3 position = sc.spline.GetPosition(pointIndex);
+        Vector3 positionNext = sc.spline.GetPosition(SplineUtility.NextIndex(pointIndex, sc.spline.GetPointCount()));
+        Vector3 positionPrev = sc.spline.GetPosition(SplineUtility.PreviousIndex(pointIndex, sc.spline.GetPointCount()));
+        Vector3 forward = gameObject.transform.forward;
+
+        float scale = Mathf.Min((positionNext - position).magnitude, (positionPrev - position).magnitude) * 0.33f;
+
+        Vector3 leftTangent = (positionPrev - position).normalized * scale;
+        Vector3 rightTangent = (positionNext - position).normalized * scale;
+
+        sc.spline.SetTangentMode(pointIndex, ShapeTangentMode.Continuous);
+        SplineUtility.CalculateTangents(position, positionPrev, positionNext, forward, scale, out rightTangent, out leftTangent);
+
+        sc.spline.SetLeftTangent(pointIndex, leftTangent);
+        sc.spline.SetRightTangent(pointIndex, rightTangent);
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
         var mp = Input.mousePosition;
         mp.z = 10.0f;
@@ -31,15 +50,10 @@ public class SimpleDraw : MonoBehaviour
             var spline = spriteShapeController.spline;
             spline.InsertPointAt(spline.GetPointCount(), mp);
             var newPointIndex = spline.GetPointCount() - 1;
-            spline.SetTangentMode(newPointIndex, ShapeTangentMode.Linear);
+            Smoothen(spriteShapeController, newPointIndex - 1);
 
-            // BevelCutoff and BevelSize can be used when the point and its neighbor
-            // points on both sudes are linear. This creates a nice automatic curve.
-            spline.SetBevelCutoff(newPointIndex, 150.0f);
-            spline.SetBevelSize(newPointIndex, 0.25f);
-            spline.SetHeight(newPointIndex, 1.0f);
+            spline.SetHeight(newPointIndex, UnityEngine.Random.Range(0.1f, 2.0f));
             lastPosition = mp;
-            Debug.Log(dt);
         }
 	}
 }

@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.U2D;
 using ExtrasClipperLib;
 
+#if UNITY_EDITOR
+    using UnityEditor;
+#endif
+
 public enum ColliderCornerType
 {
     Square,
@@ -12,13 +16,14 @@ public enum ColliderCornerType
 }
 
 [ExecuteAlways]
-public class BakeCollider : MonoBehaviour
+public class LegacyCollider : MonoBehaviour
 {
     [SerializeField]
     ColliderCornerType m_ColliderCornerType = ColliderCornerType.Square;
     [SerializeField]
-    float m_ColliderOffset = 0;
-
+    float m_ColliderOffset = 1.0f;
+    [SerializeField]
+    bool m_UpdateCollider = false;
 
     const float s_ClipperScale = 100000.0f;
     int m_HashCode = 0;
@@ -29,7 +34,14 @@ public class BakeCollider : MonoBehaviour
         
     }
 
-    void SampleCurve(float colliderDetail, Vector3 startPoint, Vector3 startTangent, Vector3 endPoint, Vector3 endTangent, ref List<IntPoint> path)
+    // Update is called once per frame
+    void Update()
+    {
+        if (m_UpdateCollider)
+            Bake(gameObject, false);
+    }
+
+    static void SampleCurve(float colliderDetail, Vector3 startPoint, Vector3 startTangent, Vector3 endPoint, Vector3 endTangent, ref List<IntPoint> path)
     {
         
         if (startTangent.sqrMagnitude > 0f || endTangent.sqrMagnitude > 0f)
@@ -52,21 +64,30 @@ public class BakeCollider : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public static void Bake(GameObject go, bool forced)
     {
-        var sc = gameObject.GetComponent<SpriteShapeController>();
-        
-        if ( sc != null )
+        var sc = go.GetComponent<SpriteShapeController>();
+        var lc = go.GetComponent<LegacyCollider>();
+
+        if (sc != null)
         {
-            List<IntPoint> path = new List<IntPoint>();        
+            List<IntPoint> path = new List<IntPoint>();
             int splinePointCount = sc.spline.GetPointCount();
             int pathPointCount = splinePointCount;
-            int hashCode = sc.spline.GetHashCode() + m_ColliderCornerType.GetHashCode() + m_ColliderOffset.GetHashCode();
-            if (m_HashCode == hashCode)
-                return;
 
-            m_HashCode = hashCode;
+            ColliderCornerType cct = ColliderCornerType.Square;
+            float co = 1.0f;
+
+            if (lc != null)
+            { 
+                int hashCode = sc.spline.GetHashCode() + lc.m_ColliderCornerType.GetHashCode() + lc.m_ColliderOffset.GetHashCode();
+                if (lc.m_HashCode == hashCode && !forced)
+                    return;
+
+                lc.m_HashCode = hashCode;
+                cct = lc.m_ColliderCornerType;
+                co = lc.m_ColliderOffset;
+            }
 
             if (sc.spline.isOpenEnded)
                 pathPointCount--;
@@ -77,7 +98,7 @@ public class BakeCollider : MonoBehaviour
                 SampleCurve(sc.colliderDetail, sc.spline.GetPosition(i), sc.spline.GetRightTangent(i), sc.spline.GetPosition(nextIndex), sc.spline.GetLeftTangent(nextIndex), ref path);
             }
 
-            if (m_ColliderOffset != 0f)
+            if (co != 0f)
             {
                 List<List<IntPoint>> solution = new List<List<IntPoint>>();
                 ClipperOffset clipOffset = new ClipperOffset();
@@ -88,39 +109,51 @@ public class BakeCollider : MonoBehaviour
                 {
                     endType = EndType.etOpenSquare;
 
-                    if (m_ColliderCornerType == ColliderCornerType.Round)
+                    if (cct == ColliderCornerType.Round)
                         endType = EndType.etOpenRound;
                 }
 
                 clipOffset.ArcTolerance = 200f / sc.colliderDetail;
-                clipOffset.AddPath(path, (ExtrasClipperLib.JoinType)m_ColliderCornerType, endType);
-                clipOffset.Execute(ref solution, s_ClipperScale * m_ColliderOffset);
+                clipOffset.AddPath(path, (ExtrasClipperLib.JoinType)cct, endType);
+                clipOffset.Execute(ref solution, s_ClipperScale * co);
 
                 if (solution.Count > 0)
                     path = solution[0];
             }
 
             List<Vector2> pathPoints = new List<Vector2>(path.Count);
-
             for (int i = 0; i < path.Count; ++i)
             {
                 IntPoint ip = path[i];
                 pathPoints.Add(new Vector2(ip.X / s_ClipperScale, ip.Y / s_ClipperScale));
             }
 
-            var pc = GetComponent<PolygonCollider2D>();
+            var pc = go.GetComponent<PolygonCollider2D>();
             if (pc)
+            {
+                pc.pathCount = 0;
                 pc.SetPath(0, pathPoints.ToArray());
+            }
 
-            var ec = GetComponent<EdgeCollider2D>();
+            var ec = go.GetComponent<EdgeCollider2D>();
             if (ec)
             {
-                if (m_ColliderOffset > 0f || m_ColliderOffset  < 0f && !sc.spline.isOpenEnded)
+                if (co > 0f || co < 0f && !sc.spline.isOpenEnded)
                     pathPoints.Add(pathPoints[0]);
-
                 ec.points = pathPoints.ToArray();
             }
         }
-
     }
+
+#if UNITY_EDITOR
+
+    [MenuItem("SpriteShape/Generate Legacy Collider", false, 358)]
+    public static void BakeLegacyCollider()
+    {
+        if (Selection.activeGameObject != null)
+            LegacyCollider.Bake(Selection.activeGameObject, true);
+    }
+
+#endif
 }
+

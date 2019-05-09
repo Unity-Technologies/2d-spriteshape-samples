@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Tree Back
+    uniqueID: 4003607923
+    locked: 0
+  - name: Tree Mid
+    uniqueID: 1239860327
+    locked: 0
+  - name: Tree Front
+    uniqueID: 3407800357
+    locked: 0
+  - name: Platforms
+    uniqueID: 3754270343
+    locked: 0

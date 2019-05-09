@@ -1,7 +1,7 @@
 2D Sprite Shape
 
 # Table of Contents
-1. [Overview](#Overview) 
+1. [Overview](#Overview)
 2. [Sprite Shape Profile](#SS-Profile)
 3. [Sprite Shape Controller](#SS-Control)
 4. [What is a Sprite Shape Profile](#Whatis)

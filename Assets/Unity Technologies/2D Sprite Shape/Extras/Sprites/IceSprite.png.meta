@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: e74b518a65bc45f4cace9a2fef6af29d
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: IceSprite_0
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: IceSprite_0
   externalObjects: {}
-  serializedVersion: 6
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -43,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 2
   spritePivot: {x: 0.5, y: 1}
   spritePixelsToUnits: 100
@@ -122,6 +124,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 90ea334be9f96ef4bb890e2fc7bcf3de
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -130,11 +133,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 79445debcbead99418b13722644a8ad2
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

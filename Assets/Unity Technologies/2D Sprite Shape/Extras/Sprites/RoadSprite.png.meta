@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: c6dabd295b8ab514fa47b5d4e2b0266e
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: RoadSprite_0
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: RoadSprite_0
   externalObjects: {}
-  serializedVersion: 6
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -43,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -133,6 +135,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ed6607adfdf684d4da85b7999d1f5202
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -141,11 +144,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: b468cefc15307564da2e53ce4a456f36
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

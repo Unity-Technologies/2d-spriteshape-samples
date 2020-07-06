@@ -90,7 +90,7 @@ There are two parts to creating and editing Sprite Shapes, namely the **[Sprite 
 |**Collider**|Note: The following Collider options are only displayed if either the Polygon Collider 2D or Edge Collider 2D component is attached to the Sprite Shape.|
 |&nbsp;&nbsp;Detail|Tessellation quality of the collider mesh.|
 |&nbsp;&nbsp;Corner Type|Select from Square/Round/Sharp. Determines the shape of the collider mesh corners.|
-|&nbsp;&nbsp;Offset|Sets the distance between the Sprite Shape’s spline path and the Collider mesh's edge.When Open Ended is checked, only positive values affect the mesh.When Open Ended is unchecked, positive values expand the mesh outwards, while negative values constricts the mesh inwards.|
+|&nbsp;&nbsp;Offset|Sets the distance between the Sprite Shape’s spline path and the Collider mesh's edge. When Open Ended is checked, only positive values affect the mesh. When Open Ended is unchecked, positive values expand the mesh outwards, while negative values constrict the mesh inwards.|
 
 # <a id="Whatis"></a>What is a Sprite Shape Profile
 
@@ -169,7 +169,7 @@ After creating multiple Angle Ranges and assigning different Sprites, you can pr
 
 The *Strip* preset is ideal to create continuous platforms (see Fig 18). These Sprite Shapes can be extended or deformed as needed for your Project, with the Sprites automatically tiling along the spline path.<p>![Example repeat](images/2D_SpriteShape_024.png)<br><sub>Fig 18: Sprite Shape forming a continuous platform along the spline path</sub>
 
-1. First, prepare the base Sprite correctly before it is used into the Sprite Shape Profile.<br>![Base Sprite](images/2D_SpriteShape_025.png)<p><sub>Fig 19: The original Sprite</sub><p>Import the Sprite into the Project, and open the [Sprite Editor](https://docs.unity3d.com/Manual/SpriteEditor.html) to edit its borders.<p>![Sprite Editing borders](images/2D_SpriteShape_026.png)<br><sub>Fig 20: Creating borders in the Sprite Editor</sub><p>The Sprite border appears as as a green outline along the edges of the Sprite. Click and drag the Control Points of the border to change its size and shape. Divide the Sprite into 3 sections - a middle section that will be repeatedly tiled, and two sections that border the middle to act as bookends.<p>With the *Strip* preset settings, the middle section is tiled along the spline path, and both ends of the Sprite Shape can be capped by the left and right sections defined in Fig 20.<p>Select **Apply** to save these new Sprite borders.
+1. First, prepare the base Sprite correctly before it is used into the Sprite Shape Profile.<br>![Base Sprite](images/2D_SpriteShape_025.png)<p><sub>Fig 19: The original Sprite</sub><p>Import the Sprite into the Project, and open the [Sprite Editor](https://docs.unity3d.com/Manual/SpriteEditor.html) to edit its borders.<p>![Sprite Editing borders](images/2D_SpriteShape_026.png)<br><sub>Fig 20: Creating borders in the Sprite Editor</sub><p>The Sprite border appears as a green outline along the edges of the Sprite. Click and drag the Control Points of the border to change its size and shape. Divide the Sprite into 3 sections - a middle section that will be repeatedly tiled, and two sections that border the middle to act as bookends.<p>With the *Strip* preset settings, the middle section is tiled along the spline path, and both ends of the Sprite Shape can be capped by the left and right sections defined in Fig 20.<p>Select **Apply** to save these new Sprite borders.
 
 2. Exit the **Sprite Editor** and create a new **Sprite Shape Profile** with the *Strip* preset.<p>![image alt text](images/2D_SpriteShape_027.png)<br><sub>Fig 21: Default Sprite Shape profile for the *Strip* Preset</sub>
 
@@ -297,12 +297,13 @@ All Collider 2D components can be used, except for the *Tilemap Collider 2D*. Ho
 
 ![Polygon default colllider](images/2D_SpriteShape_047.png)<br><sub>Fig 40: Polygon Collider 2D green outline over Sprite Shape</sub>
 
-When first attached, the Collider’s mesh and outline does not match the Sprite Shape (see Fig 40). To automatically match the Collider mesh to the Sprite Shape, go to the Sprite Shape Controller’s *Collider* settings (see Fig 41), and check the *Update Collider* checkbox.
+When first attached, the Collider’s mesh and outline do not match the Sprite Shape (see Fig 40). To automatically match the Collider mesh to the Sprite Shape, go to the Sprite Shape Controller’s *Collider* settings (see Fig 41), and check the *Update Collider* checkbox.
 
-![Match](images/2D_SpriteShape_048.png)<br><sub>Fig 41: *Update Collider *automatically edits the Colldier outline to match the Sprite Shape</sub>
+![Match](images/2D_SpriteShape_048.png)<br><sub>Fig 41: *Update Collider *automatically edits the Collider outline to match the Sprite Shape</sub>
 
 To make manual edits to the Collider mesh, go to the component’s settings and enable *Edit Collider* to move and create the Collider mesh’s control points (see Fig 42).
 
 ![Edit Collider](images/2D_SpriteShape_049.png)<br><sub>Fig 42: Editing the Collider mesh manually</sub>
 
 Note that Colliders are unique to each instance of the **Sprite Shape Profile** in the Scene. To duplicate a Collider mesh, you must duplicate the entire Sprite Shape object it is attached to as well.
+
